@@ -3,7 +3,10 @@ import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react";
 import './imageSlider.css'
 
 interface props{
-    images:string[]
+    images:{
+        url:string,
+        alt:string
+    }[]
 }
 
 const ImageSlider:React.FC<props> = ({ images }) => {
@@ -168,8 +171,8 @@ const style = (index:number) => {
             <img
             loading="lazy"
               key={index}
-              src={image}
-              // alt={alt}
+              src={image.url}
+              alt={image.alt}
               aria-hidden={imageIndex !== index}
               className="img-slider-img"
               style={{ transform: `translateX(${-100 * imageIndex}%)`, 
@@ -244,12 +247,12 @@ const style = (index:number) => {
         className="images-grid"
         id='photo-gallery'>
             {images.map((image, index)=> (
-                <img src={image}
+                <img src={image.url}
                 key={index}
                 onMouseEnter={()=>handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
                 style={style(index)}
-                // alt={image.alt}
+                alt={image.alt}
                 onClick={()=> handleItemClick(index)}
                 className='desktop-image'></img>
             ))}
