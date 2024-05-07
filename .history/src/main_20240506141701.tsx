@@ -1,0 +1,14 @@
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import { GeneralContext } from './context/context'
+import './index.css'
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <GeneralContext>
+    
+  </GeneralContext>
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
