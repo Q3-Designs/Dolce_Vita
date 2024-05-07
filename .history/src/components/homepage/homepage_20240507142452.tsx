@@ -17,15 +17,7 @@ const images= [
       <section className="absolute top-0 left-0 w-screen">
 
 
-            <TextParallaxContentExample
-            image={home1}
-            heading='Dolce Vita Construction and Project Management'
-            subheading="We make phenomenal homes"
-            title={text1.title}
-            description={text1.description}
-            hasDestination={true}
-            destination='custom-homes'
-            />
+            <TextParallaxContentExample/>
 
             <Content
             image={home1}

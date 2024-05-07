@@ -19,13 +19,7 @@ const images= [
 
             <TextParallaxContentExample
             image={home1}
-            heading='Dolce Vita Construction and Project Management'
-            subheading="We make phenomenal homes"
-            title={text1.title}
-            description={text1.description}
-            hasDestination={true}
-            destination='custom-homes'
-            />
+            heading='/>
 
             <Content
             image={home1}

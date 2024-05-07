@@ -22,10 +22,7 @@ const images= [
             heading='Dolce Vita Construction and Project Management'
             subheading="We make phenomenal homes"
             title={text1.title}
-            description={text1.description}
-            hasDestination={true}
-            destination='custom-homes'
-            />
+            description={text1.description/>
 
             <Content
             image={home1}

@@ -13,10 +13,8 @@ function App() {
    
       </Route>
 
-      <Route path='custom-homes' element={<CustomProperty/>}
-      >
-
-      </Route>
+      <Route path='custom-properties' element={<CustomProperty/>}
+      ></Route>
 
     </Routes>
     

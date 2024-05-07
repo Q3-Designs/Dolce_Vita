@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-#photo-gallery{
-  /* background-color: red; */
-}
-
 .img-slider-img {
   object-fit: cover;
   width: 100%;

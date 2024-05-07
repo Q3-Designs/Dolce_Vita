@@ -36,6 +36,19 @@ title,description}) => {
         description={description}
       />
       </TextParallaxContent>
+
+      <TextParallaxContent
+        imgUrl={home2}
+        subheading="Working with us is great"
+        heading="We also renovate homes"
+       
+      >
+      <TextExample1
+            {...text1}
+      destination="custom-homes"/>
+      </TextParallaxContent>
+
+      
     
     </div>
   );

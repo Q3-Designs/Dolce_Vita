@@ -13,14 +13,14 @@ interface ParallaxTextProps {
         subheading: string;
         heading:string;
         destination:string;
-        title:string;
-        description:string[]
+        text:string;
+        description:string
         hasDestination:boolean
 }
 
 export const TextParallaxContentExample: React.FC<ParallaxTextProps>
  = ({image,subheading, heading, destination,
-title,description}) => {
+text,description}) => {
   return (
     <div className="relative">
       <TextParallaxContent
@@ -32,10 +32,23 @@ title,description}) => {
       >
       <TextExample1
       destination={destination}
-        title={title}
-        description={description}
+        title={text1.title}
+        description={text1.description}
       />
       </TextParallaxContent>
+
+      <TextParallaxContent
+        imgUrl={home2}
+        subheading="Working with us is great"
+        heading="We also renovate homes"
+       
+      >
+      <TextExample1
+            {...text1}
+      destination="custom-homes"/>
+      </TextParallaxContent>
+
+      
     
     </div>
   );

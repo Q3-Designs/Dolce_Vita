@@ -24,7 +24,6 @@ const images= [
             title={text1.title}
             description={text1.description}
             hasDestination={true}
-            destination='custom-homes'
             />
 
             <Content

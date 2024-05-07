@@ -36,6 +36,10 @@ title,description}) => {
         description={description}
       />
       </TextParallaxContent>
+
+   
+
+      
     
     </div>
   );

@@ -166,7 +166,7 @@ const style = (index:number) => {
         >
           {images.map((image, index) => (
             <img
-            loading="lazy"
+            lo
               key={index}
               src={image}
               // alt={alt}

@@ -2,7 +2,6 @@
 import './App.css'
 import Homepage from './components/homepage/homepage'
 import {Routes, Route} from 'react-router-dom'
-import CustomProperty from './components/customProperty/customProperty'
 function App() {
 
 
@@ -13,10 +12,7 @@ function App() {
    
       </Route>
 
-      <Route path='custom-homes' element={<CustomProperty/>}
-      >
-
-      </Route>
+      <Route path='customProperti'
 
     </Routes>
     

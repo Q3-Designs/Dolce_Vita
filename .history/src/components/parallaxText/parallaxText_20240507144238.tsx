@@ -14,7 +14,7 @@ interface ParallaxTextProps {
         heading:string;
         destination:string;
         title:string;
-        description:string[]
+        description:string
         hasDestination:boolean
 }
 
@@ -33,9 +33,22 @@ title,description}) => {
       <TextExample1
       destination={destination}
         title={title}
-        description={description}
+        description={text1.description}
       />
       </TextParallaxContent>
+
+      <TextParallaxContent
+        imgUrl={home2}
+        subheading="Working with us is great"
+        heading="We also renovate homes"
+       
+      >
+      <TextExample1
+            {...text1}
+      destination="custom-homes"/>
+      </TextParallaxContent>
+
+      
     
     </div>
   );
