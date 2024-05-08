@@ -6,7 +6,6 @@ import home2 from '../../media/dv-home2.png'
 import { text1 } from "../../data/data"
 import ImageSlider from "../imageSlider/imageSlider"
 import Footer from "../footer/footer"
-import Navbar from "../navbar/navbar"
 
 const Homepage: React.FC = () => {
     const workLinks = {
@@ -46,14 +45,10 @@ const Homepage: React.FC = () => {
 
     return (
         <>
-           <Navbar
-        links={workLinks.links}
-        />
-      <section className="absolute top-20 left-0 w-screen">
+      <section className="absolute top-0 left-0 w-screen">
 
 
-
-            {/* <TextParallaxContentExample
+            <TextParallaxContentExample
             image={home1}
             heading='Dolce Vita Construction and Project Management'
             subheading="We are"
@@ -61,7 +56,7 @@ const Homepage: React.FC = () => {
             description={text1.description}
             hasDestination={true}
             destination='custom-homes'
-            /> */}
+            />
 
             <Content
             image={home1}
@@ -94,9 +89,8 @@ const Homepage: React.FC = () => {
             {/* <ImageSlider
             images={images}/> */}
             </section>
-            </>
+  
     )
-    
 }
 
 

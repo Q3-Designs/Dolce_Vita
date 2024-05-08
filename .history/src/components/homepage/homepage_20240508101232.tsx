@@ -46,11 +46,8 @@ const Homepage: React.FC = () => {
 
     return (
         <>
-           <Navbar
-        links={workLinks.links}
-        />
-      <section className="absolute top-20 left-0 w-screen">
-
+     
+      <section className="absolute top-0 left-0 w-screen">
 
 
             {/* <TextParallaxContentExample

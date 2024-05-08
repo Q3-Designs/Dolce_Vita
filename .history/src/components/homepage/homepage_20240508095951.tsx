@@ -46,14 +46,12 @@ const Homepage: React.FC = () => {
 
     return (
         <>
-           <Navbar
-        links={workLinks.links}
-        />
-      <section className="absolute top-20 left-0 w-screen">
+        <Navbar
+        links={}
+      <section className="absolute top-0 left-0 w-screen">
 
 
-
-            {/* <TextParallaxContentExample
+            <TextParallaxContentExample
             image={home1}
             heading='Dolce Vita Construction and Project Management'
             subheading="We are"
@@ -61,7 +59,7 @@ const Homepage: React.FC = () => {
             description={text1.description}
             hasDestination={true}
             destination='custom-homes'
-            /> */}
+            />
 
             <Content
             image={home1}
