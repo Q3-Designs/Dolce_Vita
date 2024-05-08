@@ -2,7 +2,9 @@
 import './App.css'
 import Homepage from './components/homepage/homepage'
 import {Routes, Route} from 'react-router-dom'
-import CustomProperty from './components/customProperty/customProperty'
+
+import WhiteHome from './components/whiteHome/whiteHome'
+import GreyHome from './components/greyHome/greyHome'
 function App() {
 
 
@@ -13,10 +15,13 @@ function App() {
    
       </Route>
 
-      <Route path='custom-homes' element={<CustomProperty/>}
+      <Route path='retail-homes' element={<GreyHome/>}
       >
 
       </Route>
+
+      <Route path='custom-homes' element={<WhiteHome/>}
+      />
 
     </Routes>
     

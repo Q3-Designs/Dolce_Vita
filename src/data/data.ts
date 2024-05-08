@@ -25,6 +25,7 @@ export const greyHomeText2 = {
 
 
 
+
 export const listText1 = [
     {
         title:'Aspect 1',
@@ -40,3 +41,14 @@ export const listText1 = [
     }
   
 ]
+
+
+export const whiteHouseText1 = {
+    title:'Our exterior designs',
+    description:'We make very nice outdoor properties'
+}
+
+export const whiteHouseText2 = {
+    title:'Our interior designs',
+    description:'You will be nice and cozy indoors'
+}
