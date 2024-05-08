@@ -23,15 +23,14 @@ const Navbar: React.FC<NavbarProps> = ({links}) => {
         <nav className="fixed top-0 z-20 w-screen left-0 bg-blue-200
         h-[100px] flex justify-between items-center  ">
        
-<div className="relative flex justify-around items-center w-screen
+<div className="relative flex justify-evenly items-center w-screen
  md:w-[70vw] max-w-[767px]
   md:justify-evenly md:items-stretch 
 ">
 
 
  
-          <p className="ml-2 md:text-2xl mr-auto md:mr-0
-          pl-6 md:pl-0">Dolce Vita</p>
+          <p className="ml-2 md:text-2xl">Dolce Vita</p>
           <div className={`fixed right-[5%] top-[45px] flex flex-col justify-center items-center
           md:relative
           md:top-auto

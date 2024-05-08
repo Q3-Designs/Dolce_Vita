@@ -30,8 +30,7 @@ const Navbar: React.FC<NavbarProps> = ({links}) => {
 
 
  
-          <p className="ml-2 md:text-2xl mr-auto md:mr-0
-          pl-6 md:pl-0">Dolce Vita</p>
+          <p className="ml-2 md:text-2xl">Dolce Vita</p>
           <div className={`fixed right-[5%] top-[45px] flex flex-col justify-center items-center
           md:relative
           md:top-auto

@@ -25,7 +25,7 @@ const Navbar: React.FC<NavbarProps> = ({links}) => {
        
 <div className="relative flex justify-around items-center w-screen
  md:w-[70vw] max-w-[767px]
-  md:justify-evenly md:items-stretch 
+  md:justify-evenly md:items-stretch bg-red-200
 ">
 
 
