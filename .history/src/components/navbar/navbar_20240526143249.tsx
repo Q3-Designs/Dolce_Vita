@@ -20,8 +20,8 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
          flex justify-between items-center 
           z-[210] text-white">
             <div className="relative flex justify-between 
-             items-center  w-screen lg:w-[80vw] max-w-[1300px] lg:justify-between lg:items-stretch
-            z-[110]  ml-auto mr-auto">
+             items-center  w-screen lg:w-[80vw] max-w-[1000px] lg:justify-between lg:items-stretch
+            z-[110] bg-red-200 ml-auto mr-auto">
                 <Link to='/'>
 
 

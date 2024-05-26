@@ -16,7 +16,7 @@ description,images}) => {
 
     return (
         <section className="mt-4">
-            <h1 className="text-center">{title}</h1>
+            <h1 className="pl-8 ml-auto">{title}</h1>
             <p className="text-left pl-4 mt-5 mb-5 max-w-[800px] mr-auto ml-auto
             md:p-0">{description}</p>
             {/* <ImageSlider2
