@@ -1,0 +1,95 @@
+export const text1 = {
+    mainTitle:'Our Portfolio',
+    description:[
+        ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, '+
+        ' blanditiis soluta eius quam modi aliquam quaerat odit deleniti minima '+
+        'maiores voluptate est ut saepe accusantium maxime doloremque nulla '+
+        ' consectetur possimus.',
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium reiciendis blanditiis aliquam aut fugit sint.'
+    ],
+    buttonLink:'custom-homes',
+    buttonText:'View Here'
+}
+
+export const text2 = {
+    mainTitle:'Retail Homes',
+    description:[
+        ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, '+
+        ' blanditiis soluta eius quam modi aliquam quaerat odit deleniti minima '+
+        'maiores voluptate est ut saepe accusantium maxime doloremque nulla '+
+        ' consectetur possimus.',
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium reiciendis blanditiis aliquam aut fugit sint.'
+    ],
+    buttonLink:'retail-homes',
+    buttonText:'View Here'
+}
+
+export const text3 = {
+    mainTitle:'Commercial Construction',
+    description:[
+        ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, '+
+        ' blanditiis soluta eius quam modi aliquam quaerat odit deleniti minima '+
+        'maiores voluptate est ut saepe accusantium maxime doloremque nulla '+
+        ' consectetur possimus.',
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium reiciendis blanditiis aliquam aut fugit sint.'
+    ],
+    buttonLink:'commercial-construction',
+    buttonText:'View Here'
+}
+
+
+export const greyHomeText = {
+    title:'Our interior',
+    description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium vitae suscipit assumenda corrupti odio! Dolore quisquam ex blanditiis exercitationem veritatis totam cupiditate, hic rerum commodi dolores aperiam. Voluptatibus minima vitae nam vero, velit ea itaque repellendus, saepe culpa provident facere?'
+}
+
+
+export const greyHomeText2 = {
+    title:'Our bed and bathrooms',
+    description:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium vitae suscipit assumenda corrupti odio! Dolore quisquam ex blanditiis exercitationem veritatis totam cupiditate, hic rerum commodi dolores aperiam. Voluptatibus minima vitae nam vero, velit ea itaque repellendus, saepe culpa provident facere?'
+}
+
+
+
+
+export const listText1 = [
+    {
+        title:'Aspect 1',
+        description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam necessitatibus veniam, ducimus sunt obcaecati impedit aut fugit distinctio animi error earum nesciunt a totam molestiae sapiente quibusdam voluptatum temporibus consequatur. A, facilis tenetur dolores ratione quis, repellat est accusamus ullam pariatur vitae omnis consequuntur eum? Aut saepe cumque natus hic suscipit est earum perspiciatis pariatur soluta. Unde porro voluptatibus tempora?'
+    },
+    {
+        title:'Aspect 2',
+        description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam necessitatibus veniam, ducimus sunt obcaecati impedit aut fugit distinctio animi error earum nesciunt a totam molestiae sapiente quibusdam voluptatum temporibus consequatur. A, facilis tenetur dolores ratione quis, repellat est accusamus ullam pariatur vitae omnis consequuntur eum? Aut saepe cumque natus hic suscipit est earum perspiciatis pariatur soluta. Unde porro voluptatibus tempora?'
+    },
+    {
+        title:'Aspect 3',
+        description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam necessitatibus veniam, ducimus sunt obcaecati impedit aut fugit distinctio animi error earum nesciunt a totam molestiae sapiente quibusdam voluptatum temporibus consequatur. A, facilis tenetur dolores ratione quis, repellat est accusamus ullam pariatur vitae omnis consequuntur eum? Aut saepe cumque natus hic suscipit est earum perspiciatis pariatur soluta. Unde porro voluptatibus tempora?'
+    }
+  
+]
+
+
+export const whiteHouseText1 = {
+    title:'Our exterior designs',
+    description:'We make very nice outdoor properties'
+}
+
+export const whiteHouseText2 = {
+    title:'Our interior designs',
+    description:'You will be nice and cozy indoors'
+}
+
+export const closerText = {
+    title:'Closing statment',
+    description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nobis beatae provident eligendi quidem repudiandae corporis recusandae, quibusdam quo ut.',
+    destination:'booking',
+    buttonText:'Contact Now'
+}
+
+export const openingText = {
+    title:'We are Dolce Vita Construction',
+    description:`We are Dolce Vita Construction and Consulting, a distinguished leader in the realm of construction and consulting services in Halifax, Nova Scotia. With our unwavering commitment to excellence, we specialize in crafting visionary spaces that exceed expectations. From concept to completion, our seasoned team brings unparalleled expertise and innovative solutions to every project, ensuring remarkable results that stand the test of time. Partner with us and experience the difference that true craftsmanship and dedication can make.`,
+    destination:'booking',
+    buttonText:'Contact Now'
+}
+
