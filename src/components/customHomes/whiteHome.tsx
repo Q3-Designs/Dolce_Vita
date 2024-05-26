@@ -284,9 +284,9 @@ const WhiteHome: React.FC = () => {
             heading='Our Homes'
             subheading=""
             destination="link"
-            title='title'
+            title=''
             description={[
-                'description'
+                ''
             ]}
             hasDestination={false}/>
 

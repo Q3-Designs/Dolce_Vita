@@ -26,7 +26,7 @@ const Homepage: React.FC = () => {
         links: [
             {
                 destination: 'custom-homes',
-                name: 'Custom Homes'
+                name: 'Our Work'
             },
             {
                 destination: 'commercial-construction',
@@ -153,7 +153,8 @@ bg-main-color">
      </>
         ) : (
             <>
-            <section className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-100 p-8 rounded-md shadow-md`
+            <section className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-100 p-8 rounded-md shadow-md
+            bg-main-color`
         }>
                 <h2 className="text-center text-xl font-semibold mb-4 text-black">Please Enter Password</h2>
                 <form onSubmit={handleSubmit}>

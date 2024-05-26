@@ -15,8 +15,8 @@ const HomeSection: React.FC<HomeSectionProps> = ({title,
 description,images}) => {
 
     return (
-        <section >
-            <h1 className="">{title}</h1>
+        <section className="mt-4">
+            <h1 className="pl-4">{title}</h1>
             <p className="text-left pl-4 mt-5 mb-5 max-w-[800px] mr-auto ml-auto
             md:p-0">{description}</p>
             {/* <ImageSlider2
