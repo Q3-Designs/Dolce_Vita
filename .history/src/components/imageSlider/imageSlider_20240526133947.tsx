@@ -123,7 +123,7 @@ const style = (index:number) => {
     <>
 
 {!isDesktop && !mobileExpanded && (
-    <div className="mb-5 text-center">
+    <div className="mb-5">
 
 
             <h1>{images.length} Photos</h1>
@@ -133,7 +133,7 @@ const style = (index:number) => {
 
     {!isDesktop  || (itemClicked !== null && desktopExpanded) ? (
         <section
-       className="mb-10"
+       
         id='photo-gallery'
         aria-label="Image Slider"
         style={{ width: "100%",
@@ -228,7 +228,7 @@ const style = (index:number) => {
         mb-5"
         style={{
           position: desktopExpanded || mobileExpanded? 'fixed' : 'absolute',
-          top: desktopExpanded || mobileExpanded? 'auto' : '100%',
+          top: desktopExpanded || mobileExpanded? 'auto' : '10%',
           left:'50%',
           transform:'translateX(-50%)',
           zIndex:'5',
