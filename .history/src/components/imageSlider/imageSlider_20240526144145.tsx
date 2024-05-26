@@ -11,7 +11,7 @@ interface props{
 
 const ImageSlider:React.FC<props> = ({ images }) => {
   const [imageIndex, setImageIndex] = useState(0);
-//   const [isFullHeight, setIsFullHeight] = useState(false);
+  // const [isFullHeight, setIsFullHeight] = useState(false);
 
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 565)
 
@@ -89,8 +89,6 @@ const ImageSlider:React.FC<props> = ({ images }) => {
 
 
 
-
-
 const handleExpansion = () => {
 
     if(isDesktop) {
@@ -117,8 +115,7 @@ const style = (index:number) => {
     return {
         opacity: selected ? '0.8' : '1',
         transform: selected ? 'scale(1.05)' : 'scale(1)',
-        transition: 'all 0.3s ease-in-out',
-       
+        transition: 'all 0.3s ease-in-out'
     }
 }
 
@@ -126,7 +123,7 @@ const style = (index:number) => {
     <>
 
 {!isDesktop && !mobileExpanded && (
-    <div>
+    <div className="mb-5 text-center">
 
 
             <h1>{images.length} Photos</h1>
@@ -134,24 +131,18 @@ const style = (index:number) => {
             </div>
         )}
 
-        <div className="slider-container">
-
-       
-
     {!isDesktop  || (itemClicked !== null && desktopExpanded) ? (
         <section
-       
+       className="mb-10"
         id='photo-gallery'
         aria-label="Image Slider"
-        style={{ width: "100vw",
+        style={{ width: "100%",
          position:  desktopExpanded || mobileExpanded ? 'fixed' :"relative",
          backgroundColor:'black',
          height: desktopExpanded || mobileExpanded? '100vh' : 'auto',
          top: desktopExpanded || mobileExpanded?'0': 'auto',
          left:desktopExpanded || mobileExpanded?'0': 'auto',
-       
-
-         zIndex:10
+         zIndex:100
   
    }}
       >
@@ -166,6 +157,7 @@ const style = (index:number) => {
             display: "flex",
             overflow: "hidden",
             alignItems:'center',
+            zIndex: is
            
 
          
@@ -180,10 +172,6 @@ const style = (index:number) => {
               aria-hidden={imageIndex !== index}
               className="img-slider-img"
               style={{ transform: `translateX(${-100 * imageIndex}%)`, 
-         
-            //   maxWidth:'1200px',
-              height: !isDesktop && mobileExpanded ? '100vh' : 'auto',
-            //   marginLeft:'auto'
             //   height:  "500px",
               
              
@@ -236,7 +224,9 @@ const style = (index:number) => {
           ))}
         </div>
         <div id="after-image-slider-controls" />
-        <button onClick={handleExpansion} className="toggle-height-btn"
+        <button onClick={handleExpansion} 
+        className="toggle-height-btn
+        mb-5"
         style={{
           position: desktopExpanded || mobileExpanded? 'fixed' : 'absolute',
           top: desktopExpanded || mobileExpanded? 'auto' : '100%',
@@ -245,7 +235,8 @@ const style = (index:number) => {
           zIndex:'5',
        
           bottom:desktopExpanded || mobileExpanded? '10%' : " auto"
-        }}>
+        }}
+        >
   
           {desktopExpanded || mobileExpanded? "Collapse" : "Expand"}
         </button>
@@ -267,7 +258,6 @@ const style = (index:number) => {
           
         </section>
     )}
-     </div>
 
 </>
   

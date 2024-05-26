@@ -1,21 +1,18 @@
-import { useState,useEffect } from "react";
+import react,{ useState,useEffect } from "react";
 import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react";
-import './imageSlider.css'
+import './carousel2.css'
 
-interface props{
-    images:{
-        url:string,
-        alt:string
-    }[]
-}
+import kakashi from '../../media/kakashi_susanoo.jpg';
+import sasuke from '../../media/sasuke.jpg';
+import vegeta from '../../media/majin-vegeta.png';
 
-const ImageSlider:React.FC<props> = ({ images }) => {
+const ImageSlider = ({ images }) => {
   const [imageIndex, setImageIndex] = useState(0);
-//   const [isFullHeight, setIsFullHeight] = useState(false);
+  const [isFullHeight, setIsFullHeight] = useState(false);
 
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 565)
 
-  const [itemClicked, setItemClicked] = useState<number | null>(null)
+  const [itemClicked, setItemClicked] = useState(null)
 
     const [desktopExpanded, setDesktopExpanded] = useState(false)
 
@@ -26,9 +23,14 @@ const ImageSlider:React.FC<props> = ({ images }) => {
       images)
     },[])
 
+    const placeHolder = [
+     kakashi,
+     vegeta
+    ]
 
+    images = images || placeHolder
 
-  const handleItemClick = (index:number) => {
+  const handleItemClick = (index) => {
 
     console.log('item clicked')
 
@@ -87,9 +89,13 @@ const ImageSlider:React.FC<props> = ({ images }) => {
     
 //   };
 
+const handleUnexpand = () => {
+    setDesktopExpanded(false)
+}
 
-
-
+const handleMobileClick = () => {
+    setMobileExpanded(true)
+}
 
 const handleExpansion = () => {
 
@@ -101,9 +107,9 @@ const handleExpansion = () => {
     }
 }
 
-const [hovered, setHovered] = useState<number | null>(null)
+const [hovered, setHovered] = useState(null)
 
-const handleMouseEnter = (index:number) => {
+const handleMouseEnter = (index) => {
     setHovered(index)
 }
 
@@ -111,14 +117,13 @@ const handleMouseLeave = () => {
     setHovered(null)
 }
 
-const style = (index:number) => {
+const style = (index) => {
     const selected = index === hovered
 
     return {
         opacity: selected ? '0.8' : '1',
-        transform: selected ? 'scale(1.05)' : 'scale(1)',
-        transition: 'all 0.3s ease-in-out',
-       
+        transform: selected ? 'scale(1.05)' : null,
+        transition: 'all 0.3s ease-in-out'
     }
 }
 
@@ -134,24 +139,17 @@ const style = (index:number) => {
             </div>
         )}
 
-        <div className="slider-container">
-
-       
-
     {!isDesktop  || (itemClicked !== null && desktopExpanded) ? (
         <section
-       
         id='photo-gallery'
         aria-label="Image Slider"
-        style={{ width: "100vw",
+        style={{ width: "100%",
          position:  desktopExpanded || mobileExpanded ? 'fixed' :"relative",
          backgroundColor:'black',
          height: desktopExpanded || mobileExpanded? '100vh' : 'auto',
          top: desktopExpanded || mobileExpanded?'0': 'auto',
          left:desktopExpanded || mobileExpanded?'0': 'auto',
-       
-
-         zIndex:10
+         zIndex:100
   
    }}
       >
@@ -173,18 +171,13 @@ const style = (index:number) => {
         >
           {images.map((image, index) => (
             <img
-            loading="lazy"
               key={index}
-              src={image.url}
-              alt={image.alt}
+              src={image}
+              // alt={alt}
               aria-hidden={imageIndex !== index}
               className="img-slider-img"
               style={{ transform: `translateX(${-100 * imageIndex}%)`, 
-         
-            //   maxWidth:'1200px',
-              height: !isDesktop && mobileExpanded ? '100vh' : 'auto',
-            //   marginLeft:'auto'
-            //   height:  "500px",
+              height:  "500px",
               
              
           }}
@@ -238,7 +231,7 @@ const style = (index:number) => {
         <div id="after-image-slider-controls" />
         <button onClick={handleExpansion} className="toggle-height-btn"
         style={{
-          position: desktopExpanded || mobileExpanded? 'fixed' : 'absolute',
+          position: desktopExpanded || mobileExpanded? 'fixed ' : 'absolute',
           top: desktopExpanded || mobileExpanded? 'auto' : '100%',
           left:'50%',
           transform:'translateX(-50%)',
@@ -255,19 +248,18 @@ const style = (index:number) => {
         className="images-grid"
         id='photo-gallery'>
             {images.map((image, index)=> (
-                <img src={image.url}
+                <img src={image}
                 key={index}
                 onMouseEnter={()=>handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
                 style={style(index)}
-                alt={image.alt}
+                // alt={image.alt}
                 onClick={()=> handleItemClick(index)}
                 className='desktop-image'></img>
             ))}
           
         </section>
     )}
-     </div>
 
 </>
   
