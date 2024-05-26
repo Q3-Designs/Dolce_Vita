@@ -183,7 +183,7 @@ const style = (index:number) => {
          
             //   maxWidth:'1200px',
               height: !isDesktop && mobileExpanded ? '100vh' : 'auto',
-              zIndex: !isDesktop && mobileExpanded ? 10000 : 1
+              zIndex: !isDesktop && mobileExpanded ? 0 : 1
             //   marginLeft:'auto'
             //   height:  "500px",
               
@@ -196,18 +196,15 @@ const style = (index:number) => {
         <button
           onClick={showPrevImage}
           className="img-slider-btn"
-          style={{ left: 0,
-            zIndex: !isDesktop && mobileExpanded ? 10000 : 1 }}
+          style={{ left: 0 }}
           aria-label="View Previous Image"
-          
         >
           <ArrowBigLeft aria-hidden />
         </button>
         <button
           onClick={showNextImage}
           className="img-slider-btn"
-          style={{ right: 0,
-            zIndex: !isDesktop && mobileExpanded ? 10000 : 1 }}
+          style={{ right: 0 }}
           aria-label="View Next Image"
         >
           <ArrowBigRight aria-hidden />
@@ -220,7 +217,6 @@ const style = (index:number) => {
             transform: "translateX(-50%)",
             display: "flex",
             gap: ".25rem",
-            zIndex: !isDesktop && mobileExpanded ? 10000 : 1
           }}
         >
           {images.map((_, index) => (

@@ -220,7 +220,6 @@ const style = (index:number) => {
             transform: "translateX(-50%)",
             display: "flex",
             gap: ".25rem",
-            zIndex: !isDesktop && mobileExpanded ? 10000 : 1
           }}
         >
           {images.map((_, index) => (

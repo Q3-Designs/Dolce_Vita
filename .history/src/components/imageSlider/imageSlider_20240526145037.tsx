@@ -196,9 +196,8 @@ const style = (index:number) => {
         <button
           onClick={showPrevImage}
           className="img-slider-btn"
-          style={{ left: 0,
-            zIndex: !isDesktop && mobileExpanded ? 10000 : 1 }}
-          aria-label="View Previous Image"
+          style={{ left: 0 }}
+          aria-label="View Previous Image",
           
         >
           <ArrowBigLeft aria-hidden />
@@ -206,8 +205,7 @@ const style = (index:number) => {
         <button
           onClick={showNextImage}
           className="img-slider-btn"
-          style={{ right: 0,
-            zIndex: !isDesktop && mobileExpanded ? 10000 : 1 }}
+          style={{ right: 0 }}
           aria-label="View Next Image"
         >
           <ArrowBigRight aria-hidden />
@@ -220,7 +218,6 @@ const style = (index:number) => {
             transform: "translateX(-50%)",
             display: "flex",
             gap: ".25rem",
-            zIndex: !isDesktop && mobileExpanded ? 10000 : 1
           }}
         >
           {images.map((_, index) => (
