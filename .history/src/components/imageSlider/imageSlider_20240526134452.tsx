@@ -157,7 +157,6 @@ const style = (index:number) => {
             display: "flex",
             overflow: "hidden",
             alignItems:'center',
-            zIndex:'90'
            
 
          

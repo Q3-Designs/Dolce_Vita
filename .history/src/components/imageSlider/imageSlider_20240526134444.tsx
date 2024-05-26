@@ -142,7 +142,7 @@ const style = (index:number) => {
          height: desktopExpanded || mobileExpanded? '100vh' : 'auto',
          top: desktopExpanded || mobileExpanded?'0': 'auto',
          left:desktopExpanded || mobileExpanded?'0': 'auto',
-         zIndex:100
+         zIndex:80
   
    }}
       >
@@ -157,7 +157,6 @@ const style = (index:number) => {
             display: "flex",
             overflow: "hidden",
             alignItems:'center',
-            zIndex:'90'
            
 
          
