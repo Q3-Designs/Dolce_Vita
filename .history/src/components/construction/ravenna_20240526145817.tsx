@@ -149,7 +149,11 @@ const Commercial: React.FC = () => {
             description="Enter a realm of architectural brilliance as we unveil our diverse portfolio of commercial properties. Each image captures our dedication to excellence and innovation. From bustling urban developments to serene suburban spaces, our projects embody sophistication and precision. Explore our gallery and witness the embodiment of our vision"
             />
 
-
+<HomeSection
+            images={commericalImages}
+            title=''
+            description="Enter a realm of architectural brilliance as we unveil our diverse portfolio of commercial properties. Each image captures our dedication to excellence and innovation. From bustling urban developments to serene suburban spaces, our projects embody sophistication and precision. Explore our gallery and witness the embodiment of our vision"
+            />
 
           
 

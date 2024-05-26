@@ -134,7 +134,7 @@ const style = (index:number) => {
             </div>
         )}
 
-        <div className="mb-16">
+        <div className="slider-container">
 
        
 
@@ -248,7 +248,7 @@ const style = (index:number) => {
           left:'50%',
           transform:'translateX(-50%)',
         
-          zIndex: !isDesktop && mobileExpanded ? 10000 : 1,
+          zIndex: !isDesktop && mobileExpanded ? 10000 : 1
           bottom:desktopExpanded || mobileExpanded? '10%' : " auto"
         }}>
   

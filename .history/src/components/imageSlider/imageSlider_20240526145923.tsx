@@ -134,7 +134,7 @@ const style = (index:number) => {
             </div>
         )}
 
-        <div className="mb-16">
+        <div className="mb-4">
 
        
 

@@ -298,10 +298,10 @@ const WhiteHome: React.FC = () => {
 
             />
 
-            {/* <HomeSection
+            <HomeSection
            {...whiteHouseText2}
             images={images3}
-            /> */}
+            />
 
             {/* <HomeSection
             {...whiteHouseText2}

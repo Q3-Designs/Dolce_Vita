@@ -293,15 +293,15 @@ const WhiteHome: React.FC = () => {
 
             <HomeSection
            {...whiteHouseText1}
-            images={[...images2, ...images3]}
+            images={...images2, ...images3}
 
 
             />
 
-            {/* <HomeSection
+            <HomeSection
            {...whiteHouseText2}
             images={images3}
-            /> */}
+            />
 
             {/* <HomeSection
             {...whiteHouseText2}
