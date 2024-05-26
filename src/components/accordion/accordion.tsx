@@ -36,7 +36,7 @@ hasIntro,intro,description}) => {
        
         {hasIntro && (
             <div>
-            <h1 className='pr-1 pl-1 leading-[3.5rem]'>{intro}</h1>
+            <h1 className='pr-1 pl-1 leading-[3.5rem] text-center'>{intro}</h1>
             <p className='text-left  md:text-center pl-4 pr-6 mt-5
            w-[100%] max-w-[900px]'>{description}</p>
             </div>

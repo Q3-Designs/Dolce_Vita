@@ -1,24 +1,23 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import ravenna1 from '../../media/ravenna/ravenna2.png'
-import ravenna2 from '../../media/ravenna/ravenna1.png'
-import ravenna3 from '../../media/ravenna/ravenna22.png'
-import ravenna4 from '../../media/ravenna/ravenna17.png'
-import ravenna5 from '../../media/ravenna/ravenna11.png'
-import ravenna6 from '../../media/ravenna/ravenna21.png'
+import ravenna1 from '../../media/ravenna/ravenna2.webp'
+import ravenna2 from '../../media/ravenna/ravenna1.webp'
+import ravenna3 from '../../media/ravenna/ravenna22.webp'
+import ravenna4 from '../../media/ravenna/ravenna17.webp'
+import ravenna5 from '../../media/ravenna/ravenna11.webp'
+import ravenna6 from '../../media/ravenna/ravenna21.webp'
 
-import grey1 from '../../media/greyHome/grey-home1.png'
-import grey2 from '../../media/greyHome/grey-home2.png'
-import grey3 from '../../media/greyHome/grey-home3.png'
-import grey4 from '../../media/greyHome/grey-home4.png'
-import grey5 from '../../media/greyHome/grey-home5.png'
+import grey1 from '../../media/greyHome/grey-bed1.webp'
+import grey2 from '../../media/greyHome/grey-home2.webp'
+import grey3 from '../../media/greyHome/grey-home3.webp'
+import grey4 from '../../media/greyHome/grey-home4.webp'
+import grey5 from '../../media/greyHome/grey-home5.webp'
 
-import white1 from '../../media/white/white-main.png'
-import white2 from '../../media/white/indoor1.png'
-import white3 from '../../media/white/indoor2.png'
-import white4 from '../../media/white/indoor3.png'
-import white5 from '../../media/white/indoor4.png'
-
+import white1 from '../../media/white/white-main.webp'
+import white2 from '../../media/white/indoor1.webp'
+import white3 from '../../media/white/indoor2.webp'
+import white4 from '../../media/white/indoor3.webp'
+import white5 from '../../media/white/indoor4.webp'
 
 const ShuffleHero = () => {
   return (
