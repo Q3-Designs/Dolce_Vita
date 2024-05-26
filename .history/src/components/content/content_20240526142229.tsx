@@ -151,7 +151,7 @@ const nullVariant: Variants = {
               'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate rem distinctio veniam doloribus placeat volup tatibus dolores deleniti consequuntur harum asperiores?'}
                </motion.p>
             <motion.p
-             variants={textVariants(!isMobile ? 0.75 : 0.75)}
+             variants={textVariants(0.75)}
              initial={hasAnimation ? 'initial' : ''}
              animate={inView && hasAnimation? 'animate' : ''}
              className="mt-6 text-left pl-5 sm:pl-12"
