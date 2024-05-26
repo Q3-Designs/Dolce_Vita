@@ -96,10 +96,9 @@ export const listText3 = [
 
 
 export const whiteHouseText1 = {
-    title: 'Our Masterpieces Inside and Out',
-    description: 'Experience the epitome of luxury living with our exquisitely designed spaces, both indoors and outdoors. At Dolce Vita, we seamlessly blend nature and architecture to create breathtaking environments that extend your living space beyond the walls. Our indoor designs offer a harmonious balance of functionality and aesthetic beauty, with every detail meticulously crafted for your comfort and style. Outdoors, our spaces are tranquil retreats that integrate seamlessly with their natural surroundings. Discover the art of living, redefined, with indoor and outdoor spaces that inspire and elevate your lifestyle.'
+    title: 'Our Masterpieces',
+    description: 'Experience the epitome of outdoor living with our exquisitely designed exterior spaces. At Dolce Vita, we blend nature and architecture to create breathtaking environments that extend your living space beyond the walls. Our designs showcase a seamless integration of functionality and aesthetic beauty, offering a tranquil retreat where every detail is meticulously crafted. Discover the art of living, redefined.'
 }
-
 
 
 export const whiteHouseText2 = {

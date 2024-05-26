@@ -56,7 +56,7 @@ const Booking: React.FC = () => {
       <Navbar
       links={navLinks} />
 
-      <div className='w-screen h-screen flex justify-center items-center absolute top-20 left-0 bg-[#35465E]'>
+      <div className='w-screen h-screen flex justify-center items-center absolute top-10 left-0 bg-[#35465E]'>
         <div className='hidden md:block md:w-[50vw] max-w-[650px] ml-auto bg-black pt-3 pb-3 bg-opacity-70 rounded-3xl'>
           <h1 className='text-white text-4xl mb-4'>Dolce Vita</h1>
           <img src={house} className='w-[50vw] object-cover' />

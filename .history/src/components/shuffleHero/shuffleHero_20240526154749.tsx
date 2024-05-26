@@ -39,7 +39,6 @@ const ShuffleHero = () => {
         <button className="bg-blue-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
           Transform Your Vision
         </button>
-        </Link>
       </div>
       <ShuffleGrid />
     </section>

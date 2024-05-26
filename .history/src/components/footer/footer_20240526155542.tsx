@@ -59,7 +59,7 @@ const Footer:React.FC<FooterProps> = ({links}) => {
 
   return (
     <>
-    <footer className='
+    <footer className='mt-[]
     w-[calc(100vw-5px)] border relative
     '>
       <div className="flex justify-center

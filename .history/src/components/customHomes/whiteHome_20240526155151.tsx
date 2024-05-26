@@ -274,12 +274,12 @@ const WhiteHome: React.FC = () => {
         <Navbar
         links={navLinks}
         />
-        <section className="absolute top-0 left-0  w-screen
+        <section className="absolute top-0 left-0 flex justify-center flex-col items-center w-screen
         bg-main-color overflow-x-hidden">
             {/* <h2>We make awesome custom homes </h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed unde sint alias porro ea natus error voluptatum, laudantium autem eius quod laboriosam eum totam rem? Consequatur cum nisi magni iste.</p> */}
 
-<div className="mb-[-25rem]">
+
             <TextParallaxContentExample
             image={main}
             heading='Our Homes'
@@ -290,14 +290,16 @@ const WhiteHome: React.FC = () => {
                 ''
             ]}
             hasDestination={false}/>
-</div>
 
+{/* <div className="-translate-y-[20rem]"> */}
             <HomeSection
            {...whiteHouseText1}
             images={[...images2, ...images3]}
 
 
-            />
+
+/>
+{/* </div> */}
 
             {/* <HomeSection
            {...whiteHouseText2}
