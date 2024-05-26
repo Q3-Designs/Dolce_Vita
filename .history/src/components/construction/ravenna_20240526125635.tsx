@@ -19,7 +19,7 @@ import commercial2 from '../../media/commercial/commercial2.jpeg'
 import commercial3 from '../../media/commercial/commercial3.jpeg'
 import commercial4 from '../../media/commercial/commercial4.jpeg'
 import commercial5 from '../../media/commercial/commercial5.jpeg'
-// import commercial6 from '../../media/commercial/commercial6.jpeg'
+import commercial6 from '../../media/commercial/commercial6.jpeg'
 import commercial7 from '../../media/commercial/commercial7.jpeg'
 import { useGeneralContext } from "../../context/context";
 // import commercial8 from '../../media/commercial/commercial8.jpeg'

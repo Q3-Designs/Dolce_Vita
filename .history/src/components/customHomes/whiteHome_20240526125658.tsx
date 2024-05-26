@@ -37,12 +37,12 @@ import grey5 from '../../media/greyHome/grey-home5.png'
 // import bath2 from '../../media/greyHome/grey-bathroom2.png'
 
 import main from '../../media/white/white-main.png'
-import { whiteHouseText1,whiteHouseText2,listText3 } from "../../data/data";
+import { whiteHouseText1,listText1,whiteHouseText2,listText3 } from "../../data/data";
 import HomeSection from "../homeSection/homeSection";
 import Accordion from "../accordion/accordion";
 import { TextParallaxContentExample } from "../parallaxText/parallaxText";
 import grey1 from '../../media/greyHome/grey-home1.png'
-// import TextFormat from "../textFormat/textFormat";
+import TextFormat from "../textFormat/textFormat";
 import Content from "../content/content";
 import Navbar from "../navbar/navbar";
 import Footer from "../footer/footer";

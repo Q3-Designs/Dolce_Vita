@@ -1,67 +1,62 @@
-import React, {FormEvent} from "react";
+import React, { useEffect, FormEvent } from "react";
 
 
-import { TextParallaxContentExample } from "../parallaxText/parallaxText";
+import { greyHomeText,listText1,greyHomeText2, retailAspects } from "../../data/data";
+
 import HomeSection from "../homeSection/homeSection";
-
-// import ravenna1 from '../../media/ravenna/ravenna1.png'
-
-import Content from "../content/content";
 import Accordion from "../accordion/accordion";
-import { listText1 } from "../../data/data";
+import { TextParallaxContentExample } from "../parallaxText/parallaxText";
+import grey1 from '../../media/greyHome/grey-home1.png'
+import TextFormat from "../textFormat/textFormat";
+import Content from "../content/content";
 import Navbar from "../navbar/navbar";
 import Footer from "../footer/footer";
 
-import main from '../../media/commercial/commercialMain.jpeg'
+import retail1 from '../../media/retail/retail1.jpeg'
+import retail2 from '../../media/retail/retail2.jpeg'
+import retail3 from '../../media/retail/retail3.jpeg'
+import retail4 from '../../media/retail/retail4.jpeg'
+import retail5 from '../../media/retail/retail5.jpeg'
+import retail6 from '../../media/retail/retail6.jpeg'
+import retail7 from '../../media/retail/retail7.jpeg'
+import retail8 from '../../media/retail/retail8.jpeg'
 
-import commercial1 from '../../media/commercial/commercial1.jpeg'
-import commercial2 from '../../media/commercial/commercial2.jpeg'
-import commercial3 from '../../media/commercial/commercial3.jpeg'
-import commercial4 from '../../media/commercial/commercial4.jpeg'
-import commercial5 from '../../media/commercial/commercial5.jpeg'
-// import commercial6 from '../../media/commercial/commercial6.jpeg'
-import commercial7 from '../../media/commercial/commercial7.jpeg'
-import { useGeneralContext } from "../../context/context";
-// import commercial8 from '../../media/commercial/commercial8.jpeg'
+const GreyHome: React.FC = () => {
 
-
-const Commercial: React.FC = () => {
-
-    const commericalImages = [
-        {
-            url:commercial1,
-            alt:'Commercial building 1'
-        },
-        {
-            url:commercial2,
-            alt:'Commercial building 2'
-        },
-        {
-            url:commercial3,
-            alt:'Commercial building 3'
-        },
-        {
-            url:commercial4,
-            alt:'Commercial building 4'
-        },
-        {
-            url:commercial5,
-            alt:'Commercial building 5'
-        },
-        // {
-        //     url:commercial6,
-        //     alt:'Commercial building 6'
-        // },
-
-    ]
+const images = [
+    {
+        url:retail1,
+        alt: 'Retail Home 1'
+    },
+    {
+        url:retail2,
+        alt: 'Retail Home 2'
+    },
+    {
+        url:retail3,
+        alt: 'Retail Home 3'
+    },
+    {
+        url:retail4,
+        alt: 'Retail Home 4'
+    },
+    {
+        url:retail5,
+        alt: 'Retail Home 5'
+    },
+    {
+        url:retail6,
+        alt: 'Retail Home 6'
+    },
+]
 
     const workLinks = {
         title: 'Our Work',
         links: [
           
             {
-                destination: '/retail-homes',
-                name: 'Retail Homes'
+                destination: '/commercial-construction',
+                name: 'Commercial Construction'
             },
             {
                 destination: '/custom-homes',
@@ -103,6 +98,10 @@ const Commercial: React.FC = () => {
            }
         ]
 
+        useEffect(()=> {
+            window.scrollTo(0,0)
+        },[])
+
         const {password, setPassword, correctPassword, setCorrectPassword} = useGeneralContext()
 
         const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -117,62 +116,65 @@ const Commercial: React.FC = () => {
           const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
             setPassword(event.target.value);
           };
+
     return (
         <>
-       
 
         {correctPassword === true ? (
 
- <>
-        <section className="absolute top-0 left-0
-        bg-main-color">
-
-            <Navbar
-            links={navLinks}
-            />
+       <>
+        <Navbar
+        links={navLinks}
+        />
+        <section className="bg-main-color
+        absolute top-0 left-0 flex
+         justify-center flex-col items-center w-screen">
+            {/* <h2>We make awesome custom homes </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed unde sint alias porro ea natus error voluptatum, laudantium autem eius quod laboriosam eum totam rem? Consequatur cum nisi magni iste.</p> */}
 
             <TextParallaxContentExample
-            image={main}
-            heading='Commercial Construction'
+            image={retail7}
+            heading='Retail Construction'
             subheading=""
-            hasDestination={false}
+            destination="link"
             title=''
-            destination="contact"
             description={[
-               
+                ''
             ]}
-            />
+            hasDestination={false}/>
+
 
             <HomeSection
-            images={commericalImages}
-            title=''
-            description="Enter a realm of architectural brilliance as we unveil our diverse portfolio of commercial properties. Each image captures our dedication to excellence and innovation. From bustling urban developments to serene suburban spaces, our projects embody sophistication and precision. Explore our gallery and witness the embodiment of our vision"
+            {...greyHomeText}
+            images={images}
+
+
             />
 
-          
+  
 
-
-
-                      <Content
+           <Content
            hasAnimation={true}
-           image={commercial7}
+           image={retail8}
            customText={ <Accordion
-            text={listText1}
+            text={retailAspects}
             hasIntro={true}
-            intro='Build With Confidence'
-            description='Trust our expertise, commitment to quality, and passion for excellence in construction.'
+            intro='The best retail around'
+            description='Here are some other aspects that make our retail top tier'
             />}
 
     />
 
-    <Footer
-    links={links}
-    />
 
+           
+        <Footer
+        links={links}
+        />
         </section>
+
         </>
 
-        ) : (
+        ):(
             <>
             <section className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-100 p-8 rounded-md shadow-md`
         }>
@@ -189,8 +191,10 @@ const Commercial: React.FC = () => {
               </section>
           </>
         )}
-         </>
+
+       
+        </>
     )
 }
 
-export default Commercial
+export default GreyHome

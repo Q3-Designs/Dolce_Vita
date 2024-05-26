@@ -3,7 +3,10 @@ import emailjs from '@emailjs/browser';
 import Navbar from '../navbar/navbar';
 import house from '../../media/ravenna/ravenna1.png';
 
-
+interface InputField {
+  placeholder: string;
+  name: string;
+}
 
 const Booking: React.FC = () => {
   const [submitted, setSubmitted] = useState<boolean>(false); // Change initial state to false
@@ -49,7 +52,13 @@ const Booking: React.FC = () => {
     }
   };
 
- 
+  const inputFields: InputField[] = [
+    { placeholder: 'Email', name: 'user_email' },
+    { placeholder: 'First Name', name: 'first_Name' },
+    { placeholder: 'Last Name', name: 'last_Name' },
+    { placeholder: 'Phone number', name: 'phone_Number' },
+    { placeholder: 'Your Message', name: 'project_Details' },
+  ];
 
   return (
     <>

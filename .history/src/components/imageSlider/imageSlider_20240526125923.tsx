@@ -87,7 +87,13 @@ const ImageSlider:React.FC<props> = ({ images }) => {
     
 //   };
 
+const handleUnexpand = () => {
+    setDesktopExpanded(false)
+}
 
+const handleMobileClick = () => {
+    setMobileExpanded(true)
+}
 
 const handleExpansion = () => {
 

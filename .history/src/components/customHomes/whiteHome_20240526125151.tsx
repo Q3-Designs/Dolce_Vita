@@ -31,18 +31,18 @@ import grey2 from '../../media/greyHome/grey-home2.png'
 import grey3 from '../../media/greyHome/grey-home3.png'
 import grey4 from '../../media/greyHome/grey-home4.png'
 import grey5 from '../../media/greyHome/grey-home5.png'
-// import bed1 from '../../media/greyHome/grey-bed1.png'
-// import bed2 from '../../media/greyHome/grey-bed2.png'
-// import bath1 from '../../media/greyHome/grey-bathroom1.png'
-// import bath2 from '../../media/greyHome/grey-bathroom2.png'
+import bed1 from '../../media/greyHome/grey-bed1.png'
+import bed2 from '../../media/greyHome/grey-bed2.png'
+import bath1 from '../../media/greyHome/grey-bathroom1.png'
+import bath2 from '../../media/greyHome/grey-bathroom2.png'
 
 import main from '../../media/white/white-main.png'
-import { whiteHouseText1,whiteHouseText2,listText3 } from "../../data/data";
+import { whiteHouseText1,listText1,whiteHouseText2,listText3 } from "../../data/data";
 import HomeSection from "../homeSection/homeSection";
 import Accordion from "../accordion/accordion";
 import { TextParallaxContentExample } from "../parallaxText/parallaxText";
 import grey1 from '../../media/greyHome/grey-home1.png'
-// import TextFormat from "../textFormat/textFormat";
+import TextFormat from "../textFormat/textFormat";
 import Content from "../content/content";
 import Navbar from "../navbar/navbar";
 import Footer from "../footer/footer";

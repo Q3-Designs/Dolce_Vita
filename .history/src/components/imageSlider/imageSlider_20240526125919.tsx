@@ -11,7 +11,7 @@ interface props{
 
 const ImageSlider:React.FC<props> = ({ images }) => {
   const [imageIndex, setImageIndex] = useState(0);
-  // const [isFullHeight, setIsFullHeight] = useState(false);
+  const [isFullHeight, setIsFullHeight] = useState(false);
 
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 565)
 
@@ -87,7 +87,13 @@ const ImageSlider:React.FC<props> = ({ images }) => {
     
 //   };
 
+const handleUnexpand = () => {
+    setDesktopExpanded(false)
+}
 
+const handleMobileClick = () => {
+    setMobileExpanded(true)
+}
 
 const handleExpansion = () => {
 

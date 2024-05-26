@@ -42,7 +42,7 @@ import HomeSection from "../homeSection/homeSection";
 import Accordion from "../accordion/accordion";
 import { TextParallaxContentExample } from "../parallaxText/parallaxText";
 import grey1 from '../../media/greyHome/grey-home1.png'
-// import TextFormat from "../textFormat/textFormat";
+import TextFormat from "../textFormat/textFormat";
 import Content from "../content/content";
 import Navbar from "../navbar/navbar";
 import Footer from "../footer/footer";

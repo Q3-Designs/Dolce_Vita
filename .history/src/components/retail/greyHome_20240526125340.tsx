@@ -1,12 +1,13 @@
-import React, { useEffect, FormEvent } from "react";
+import React, { useEffect Form } from "react";
 
 
-import { greyHomeText, retailAspects } from "../../data/data";
-import { useGeneralContext } from "../../context/context";
+import { greyHomeText,listText1,greyHomeText2, retailAspects } from "../../data/data";
+
 import HomeSection from "../homeSection/homeSection";
 import Accordion from "../accordion/accordion";
 import { TextParallaxContentExample } from "../parallaxText/parallaxText";
-
+import grey1 from '../../media/greyHome/grey-home1.png'
+import TextFormat from "../textFormat/textFormat";
 import Content from "../content/content";
 import Navbar from "../navbar/navbar";
 import Footer from "../footer/footer";
@@ -101,27 +102,8 @@ const images = [
             window.scrollTo(0,0)
         },[])
 
-        const {password, setPassword, correctPassword, setCorrectPassword} = useGeneralContext()
-
-        const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-            event.preventDefault();
-            if (password === 'clients2024') {
-                setCorrectPassword(true);
-            } else {
-              alert('Incorrect password. Please try again.');
-            }
-          };
-        
-          const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-            setPassword(event.target.value);
-          };
-
     return (
         <>
-
-        {correctPassword === true ? (
-
-       <>
         <Navbar
         links={navLinks}
         />
@@ -170,26 +152,6 @@ const images = [
         links={links}
         />
         </section>
-
-        </>
-
-        ):(
-            <>
-            <section className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-100 p-8 rounded-md shadow-md`
-        }>
-                <h2 className="text-center text-xl font-semibold mb-4 text-black">Please Enter Password</h2>
-                <form onSubmit={handleSubmit}>
-                  <input
-                    type="password"
-                    value={password}
-                    onChange={handlePasswordChange}
-                    className="w-full border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-500"
-                  />
-                  <button type="submit" className="mt-4 w-full bg-blue-500 text-white rounded-md py-2 px-4 hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-500">Submit</button>
-                </form>
-              </section>
-          </>
-        )}
 
        
         </>

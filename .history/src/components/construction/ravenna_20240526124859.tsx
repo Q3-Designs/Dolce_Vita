@@ -1,10 +1,10 @@
-import React, {FormEvent} from "react";
+import React from "react";
 
 
 import { TextParallaxContentExample } from "../parallaxText/parallaxText";
 import HomeSection from "../homeSection/homeSection";
 
-// import ravenna1 from '../../media/ravenna/ravenna1.png'
+import ravenna1 from '../../media/ravenna/ravenna1.png'
 
 import Content from "../content/content";
 import Accordion from "../accordion/accordion";
@@ -19,7 +19,7 @@ import commercial2 from '../../media/commercial/commercial2.jpeg'
 import commercial3 from '../../media/commercial/commercial3.jpeg'
 import commercial4 from '../../media/commercial/commercial4.jpeg'
 import commercial5 from '../../media/commercial/commercial5.jpeg'
-// import commercial6 from '../../media/commercial/commercial6.jpeg'
+import commercial6 from '../../media/commercial/commercial6.jpeg'
 import commercial7 from '../../media/commercial/commercial7.jpeg'
 import { useGeneralContext } from "../../context/context";
 // import commercial8 from '../../media/commercial/commercial8.jpeg'
@@ -103,27 +103,13 @@ const Commercial: React.FC = () => {
            }
         ]
 
-        const {password, setPassword, correctPassword, setCorrectPassword} = useGeneralContext()
+        const {correctPassword} = useGeneralContext()
 
-        const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-            event.preventDefault();
-            if (password === 'clients2024') {
-                setCorrectPassword(true);
-            } else {
-              alert('Incorrect password. Please try again.');
-            }
-          };
-        
-          const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-            setPassword(event.target.value);
-          };
     return (
-        <>
-       
 
         {correctPassword === true ? (
 
- <>
+ 
         <section className="absolute top-0 left-0
         bg-main-color">
 
@@ -170,26 +156,10 @@ const Commercial: React.FC = () => {
     />
 
         </section>
-        </>
 
         ) : (
-            <>
-            <section className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-100 p-8 rounded-md shadow-md`
-        }>
-                <h2 className="text-center text-xl font-semibold mb-4 text-black">Please Enter Password</h2>
-                <form onSubmit={handleSubmit}>
-                  <input
-                    type="password"
-                    value={password}
-                    onChange={handlePasswordChange}
-                    className="w-full border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-500"
-                  />
-                  <button type="submit" className="mt-4 w-full bg-blue-500 text-white rounded-md py-2 px-4 hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-500">Submit</button>
-                </form>
-              </section>
-          </>
+            
         )}
-         </>
     )
 }
 
