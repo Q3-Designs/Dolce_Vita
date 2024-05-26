@@ -279,7 +279,7 @@ const WhiteHome: React.FC = () => {
             {/* <h2>We make awesome custom homes </h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed unde sint alias porro ea natus error voluptatum, laudantium autem eius quod laboriosam eum totam rem? Consequatur cum nisi magni iste.</p> */}
 
-<div className="mb-[-25rem]">
+
             <TextParallaxContentExample
             image={main}
             heading='Our Homes'
@@ -290,7 +290,7 @@ const WhiteHome: React.FC = () => {
                 ''
             ]}
             hasDestination={false}/>
-</div>
+
 
             <HomeSection
            {...whiteHouseText1}
