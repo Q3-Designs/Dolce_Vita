@@ -62,7 +62,7 @@ const Footer:React.FC<FooterProps> = ({links}) => {
     <footer className='w-[calc(100vw-5px)] border relative
     '>
       <div className="flex justify-center
-      w-screen text-center items-center
+      w-screen text-center bg-green-200 items-center
       ">
       
         {links.map((links,index) => (

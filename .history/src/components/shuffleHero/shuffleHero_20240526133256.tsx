@@ -145,15 +145,15 @@ const ShuffleGrid = () => {
   const [squares, setSquares] = useState(generateSquares());
 
   useEffect(() => {
-    timeoutRef.current = setTimeout(() => {
-      shuffleSquares();
-    }, 3000);
+    shuffleSquares();
 
     return () => clearTimeout(timeoutRef.current);
-  }, [squares]);
+  }, []);
 
   const shuffleSquares = () => {
     setSquares(generateSquares());
+
+    timeoutRef.current = setTimeout(shuffleSquares, 3000);
   };
 
   return (

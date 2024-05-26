@@ -62,14 +62,14 @@ const Footer:React.FC<FooterProps> = ({links}) => {
     <footer className='w-[calc(100vw-5px)] border relative
     '>
       <div className="flex justify-center
-      w-screen text-center items-center
+      w-screen text-center bg-green-200 items-center
       ">
       
         {links.map((links,index) => (
 
 <div key={index}
 className="flex flex-col pt-5 justify-center 
-items-center w-[200px] text-center md:text-left mb-auto">
+items-center w-[200px] text-center text-left mb-auto">
  <h2 className='font-medium text-2xl mb-4  mr-auto ml-auto md:ml-0'>{links.title}</h2>
  {links.links.map((link,index) => (
      <ul className='mr-auto ml-auto md:ml-0'>
