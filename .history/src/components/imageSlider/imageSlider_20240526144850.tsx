@@ -183,7 +183,7 @@ const style = (index:number) => {
          
             //   maxWidth:'1200px',
               height: !isDesktop && mobileExpanded ? '100vh' : 'auto',
-              zIndex: !isDesktop && mobileExpanded ? 10000 : 1
+              zIndex: 
             //   marginLeft:'auto'
             //   height:  "500px",
               
