@@ -7,7 +7,7 @@ text2,text3 } from "../../data/data"
 
 import Footer from "../footer/footer"
 import Navbar from "../navbar/navbar"
-
+import ShuffleHero from "../shuffleHero/shuffleHero"
 
 import Closer from "../closer/closer"
 import dark from '../../media/ravenna/dark-ravenna.webp'
@@ -15,20 +15,27 @@ import darkWhite from '../../media/white/dark-white.webp'
 import indoor3 from '../../media/white/indoor3.webp'
 import commercial from '../../media/commercial/commercialMain.webp'
 
-
+import ravenna1 from '../../media/ravenna/ravenna2.webp';
+import ravenna2 from '../../media/ravenna/ravenna1.webp';
 import ravenna3 from '../../media/ravenna/ravenna22.webp';
 import ravenna4 from '../../media/ravenna/ravenna17.webp';
 import ravenna5 from '../../media/ravenna/ravenna11.webp';
+import ravenna6 from '../../media/ravenna/ravenna21.webp';
 
+// Imports for Grey Home images
+import grey1 from '../../media/greyHome/grey-bed1.webp';
+import grey2 from '../../media/greyHome/grey-home2.webp';
 import grey3 from '../../media/greyHome/grey-home3.webp';
-
+import grey4 from '../../media/greyHome/grey-home4.webp';
+import grey5 from '../../media/greyHome/grey-home5.webp';
 
 // Imports for White Home images
-
+import white1 from '../../media/white/white-main.webp';
+import white2 from '../../media/white/indoor1.webp';
 import white3 from '../../media/white/indoor2.webp';
-
+import white4 from '../../media/white/indoor3.webp';
+import white5 from '../../media/white/indoor4.webp';
 import { useGeneralContext } from "../../context/context"
-import ImageHero from "../imageHero/imageHero"
 
 const Homepage: React.FC = () => {
 
@@ -97,7 +104,6 @@ const Homepage: React.FC = () => {
             { src: ravenna4, alt: 'Ravenna 4' },
             { src: ravenna5, alt: 'Ravenna 5' },
             { src: white3, alt: 'White Home 3' },
-            { src: grey3, alt: 'Gray home 3'}
            
         ]
         
@@ -113,8 +119,7 @@ const Homepage: React.FC = () => {
 <section className="absolute top-20 left-0 w-screen overflow-x-hidden
 bg-main-color">
 
-<ImageHero
-images={imagesArray}/>
+<Imag>
 
      <Closer
      {...openingText}

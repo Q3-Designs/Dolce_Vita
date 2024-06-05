@@ -24,9 +24,11 @@ import grey3 from '../../media/greyHome/grey-home3.webp';
 
 
 // Imports for White Home images
-
+import white1 from '../../media/white/white-main.webp';
+import white2 from '../../media/white/indoor1.webp';
 import white3 from '../../media/white/indoor2.webp';
-
+import white4 from '../../media/white/indoor3.webp';
+import white5 from '../../media/white/indoor4.webp';
 import { useGeneralContext } from "../../context/context"
 import ImageHero from "../imageHero/imageHero"
 
