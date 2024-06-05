@@ -83,7 +83,7 @@ const Homepage: React.FC = () => {
     return (
         <>
 
-        {correctPassword === false ? (
+        {correctPassword === true ? (
             <>
  <Navbar
  links={navLinks}
@@ -168,7 +168,7 @@ bg-main-color">
                 </form>
               </section>
           </>
-        )} 
+        )} */}
 
           
             </>

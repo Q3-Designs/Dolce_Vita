@@ -83,7 +83,7 @@ const Homepage: React.FC = () => {
     return (
         <>
 
-        {correctPassword === false ? (
+        {correctPassword === true ? (
             <>
  <Navbar
  links={navLinks}
