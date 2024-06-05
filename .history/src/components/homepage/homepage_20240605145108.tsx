@@ -151,7 +151,7 @@ bg-main-color">
      images={images}/> */}
      </section>
      </>
-        {/* ) : (
+        ) : (
             <>
             <section className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-100 p-8 rounded-md shadow-md
             bg-main-color`
@@ -168,7 +168,7 @@ bg-main-color">
                 </form>
               </section>
           </>
-        )} */}
+        )}
 
           
             </>

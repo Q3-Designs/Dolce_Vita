@@ -1,7 +1,0 @@
-
-
-
-
-const Homepage: React.FC = () => {
-    
-}

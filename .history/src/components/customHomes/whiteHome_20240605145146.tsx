@@ -268,7 +268,7 @@ const WhiteHome: React.FC = () => {
 
     return (
         <>
-        {correctPassword === false ? (
+        {correctPassword === `''` ? (
 
        <>
         <Navbar
