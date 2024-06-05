@@ -12,7 +12,7 @@ import { listText1 } from "../../data/data";
 import Navbar from "../navbar/navbar";
 import Footer from "../footer/footer";
 
-import main from '../../media/commercial/commercialMain.webp'
+import main from '../../media/commercial/commercialMain.wep'
 
 import commercial1 from '../../media/commercial/commercial1.jpeg'
 import commercial2 from '../../media/commercial/commercial2.jpeg'
