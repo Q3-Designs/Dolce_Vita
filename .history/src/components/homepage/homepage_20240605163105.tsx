@@ -187,9 +187,9 @@ images={imagesArray}/>
    
      />
 
-     {/* <h1 className="text-center">
-        We get to work
-     </h1> */}
+     <h1 className="text-center">
+        
+     </h1>
 
      <ScrollableCarousel
      images={scrollables}

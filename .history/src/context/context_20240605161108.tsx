@@ -38,7 +38,7 @@ export const ContextProvider: React.FC<{ children: ReactNode }> = ({ children })
 
   const [correctPassword, setCorrectPassword] = useState(false)
 
-  const [clickedImage, setClickedImage] = useState<number | null>(null)
+  const [clickedImage, setClickedImage] = useState<numb(false)
 
   useEffect(() => {
     const handleScroll = () => {

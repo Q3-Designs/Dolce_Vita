@@ -35,7 +35,6 @@ import white3 from '../../media/white/indoor2.webp';
 
 import { useGeneralContext } from "../../context/context"
 import ImageHero from "../imageHero/imageHero"
-import ScrollableCarousel from "../scrollableCarousel/scrollableCarousel"
 
 const Homepage: React.FC = () => {
 
@@ -185,14 +184,6 @@ images={imagesArray}/>
      floatingImage={false}
      hasAnimation={true}
    
-     />
-
-     {/* <h1 className="text-center">
-        We get to work
-     </h1> */}
-
-     <ScrollableCarousel
-     images={scrollables}
      />
 
      {/* <Accordion

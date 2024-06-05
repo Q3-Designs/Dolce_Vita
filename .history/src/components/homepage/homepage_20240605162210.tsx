@@ -23,10 +23,7 @@ import ravenna5 from '../../media/ravenna/ravenna11.webp';
 import grey3 from '../../media/greyHome/grey-home3.webp';
 
 import ravenna1 from '../../media/ravenna/ravenna1.webp'
-import gray from '../../media/retail/retail6.jpeg'
-import indoor8 from '../../media/white/indoor8.webp'
-import outdoor5 from '../../media/white/outdoor5.webp'
-import indoor2 from '../../media/white/indoor2.webp'
+import gray from '../media/retail/retail6.jpeg'
 
 
 // Imports for White Home images
@@ -35,33 +32,8 @@ import white3 from '../../media/white/indoor2.webp';
 
 import { useGeneralContext } from "../../context/context"
 import ImageHero from "../imageHero/imageHero"
-import ScrollableCarousel from "../scrollableCarousel/scrollableCarousel"
 
 const Homepage: React.FC = () => {
-
-    const scrollables = [
-        {
-            src:indoor2,
-            alt:'Indoor image 2'
-        },
-        {
-            src:outdoor5,
-            alt:'Outdoor image 5'
-        },
-        {
-            src:ravenna1,
-            alt:'The ravenna, one of our best projects'
-        },
-        {
-            src:gray,
-            alt:'gray home'
-        },
-        {
-            src:indoor8,
-            alt: 'Outdoor image 8'
-        }
-    ]
-
 
     useEffect(()=> {
         window.scrollTo(0,0)
@@ -185,14 +157,6 @@ images={imagesArray}/>
      floatingImage={false}
      hasAnimation={true}
    
-     />
-
-     {/* <h1 className="text-center">
-        We get to work
-     </h1> */}
-
-     <ScrollableCarousel
-     images={scrollables}
      />
 
      {/* <Accordion

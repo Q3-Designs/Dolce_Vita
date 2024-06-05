@@ -10,6 +10,13 @@ interface GeneralContextType {
   secondCircleComplete: boolean;
   isMobile2: boolean;
   setIsMobile2: React.Dispatch<React.SetStateAction<boolean>>;
+  password:string;
+  setPassword:React.Dispatch<React.SetStateAction<string>>;
+  correctPassword:boolean;
+  setCorrectPassword:React.Dispatch<React.SetStateAction<boolean>>;
+  clickedImage:number | null;
+  setClickedImage:React.Dispatch<React.SetStateAction<number | null>>;
+
 }
 
 // Create the context
@@ -26,6 +33,12 @@ export const ContextProvider: React.FC<{ children: ReactNode }> = ({ children })
   const [isMobile2, setIsMobile2] = useState<boolean>(window.innerWidth <= 680);
 
   const [secondCircleComplete, setSecondCircleComplete] = useState<boolean>(false)
+
+  const [password, setPassword] = useState('')
+
+  const [correctPassword, setCorrectPassword] = useState(false)
+
+  const [clickedImage, setClickedImage] = useState<number | null>(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,6 +77,12 @@ export const ContextProvider: React.FC<{ children: ReactNode }> = ({ children })
     setSecondCircleComplete,
     isMobile2,
     setIsMobile2,
+    password,
+    setPassword,
+    correctPassword,
+    setCorrectPassword,
+    clickedImage,
+    setClickedImage
   };
 
   return <GeneralContext.Provider value={contextValue}>{children}</GeneralContext.Provider>;

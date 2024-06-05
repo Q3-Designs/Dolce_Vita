@@ -14,8 +14,8 @@ interface GeneralContextType {
   setPassword:React.Dispatch<React.SetStateAction<string>>;
   correctPassword:boolean;
   setCorrectPassword:React.Dispatch<React.SetStateAction<boolean>>;
-  clickedImage:number | null;
-  setClickedImage:React.Dispatch<React.SetStateAction<number | null>>;
+  clickedImage:boolean;
+  setClickedImage:React.Dispatch<React.SetStateAction<boolean>>;
 
 }
 
@@ -38,7 +38,7 @@ export const ContextProvider: React.FC<{ children: ReactNode }> = ({ children })
 
   const [correctPassword, setCorrectPassword] = useState(false)
 
-  const [clickedImage, setClickedImage] = useState<number | null>(null)
+  const [clickedImage, setClickedImage] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -82,7 +82,7 @@ export const ContextProvider: React.FC<{ children: ReactNode }> = ({ children })
     correctPassword,
     setCorrectPassword,
     clickedImage,
-    setClickedImage
+    set
   };
 
   return <GeneralContext.Provider value={contextValue}>{children}</GeneralContext.Provider>;
