@@ -38,15 +38,14 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
                     </div>
                     <ul
                         className={`text-left bg-main-color fixed right-[5%] top-[70px] overflow-hidden
-                         transition-[height] flex flex-col items-center 
+                         transition-[height] flex flex-col items-center border-l-4
+                         border-b-4 border-r-4 border-[#EBE6DC]
                      
                           justify-center rounded-lg w-[140px]
                            lg:bg-transparent lg:w-auto lg:relative lg:overflow-auto 
                            lg:top-auto lg:right-auto lg:flex-row
                            text-center
-                            ${subMenuClicked ? `h-[175px] p-0 
-                            border-l-4
-                         border-b-4 border-r-4 border-[#EBE6DC]` : 'h-[0px] p-0 lg:h-auto'}`}
+                            ${subMenuClicked ? 'h-[175px] p-0' : 'h-[0px] p-0 lg:h-auto'}`}
                     >
                         {links.map((link, index) => (
                             <Link key={index} to={link.destination}>

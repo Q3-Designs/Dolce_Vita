@@ -25,12 +25,7 @@ module.exports = {
         'gold-gradient': 'linear-gradient(to bottom, #f9d976, #f8c251, #e8a546)',
       }),
       fontFamily: {
-        cursive: ['"Dancing Script"', 'cursive'], // Default cursive font
-        'dancing-script': ['"Dancing Script"', 'cursive'],
-        'pacifico': ['"Pacifico"', 'cursive'],
-        'great-vibes': ['"Great Vibes"', 'cursive'],
-        'lobster-two': ['"Lobster Two"', 'cursive'],
-        'kaushan-script': ['"Kaushan Script"', 'cursive'],
+        cursive: ['"Brush Script MT"', 'cursive'], // or any other cursive font you prefer
       },
     },
   },

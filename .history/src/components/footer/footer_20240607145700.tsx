@@ -61,7 +61,7 @@ const Footer:React.FC<FooterProps> = ({links}) => {
     <>
     <footer className='
     w-[calc(100vw-5px)] border relative
-    text-gray-500
+    lobster-two
     '>
       <div className="flex justify-center
       w-screen text-center items-center
@@ -78,7 +78,7 @@ items-center w-[200px] text-center md:text-left mb-auto">
 
      <li className='  mb-4'>
    <Link to={link.destination}
-   className='pb-4 text-gray-500 hover:text-red-200'
+   className='pb-4 text-white hover:text-red-200'
    key={index}>
      {link.name}
    </Link>

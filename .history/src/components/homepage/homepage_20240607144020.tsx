@@ -23,7 +23,7 @@ import ravenna5 from '../../media/ravenna/ravenna11.webp';
 import grey3 from '../../media/greyHome/grey-home3.webp';
 
 import ravenna1 from '../../media/ravenna/ravenna1.webp'
-
+import gray from '../../media/retail/retail6.jpeg'
 import indoor8 from '../../media/white/indoor8.webp'
 import outdoor5 from '../../media/white/outdoor5.webp'
 import indoor2 from '../../media/white/indoor2.webp'
@@ -52,10 +52,10 @@ const Homepage: React.FC = () => {
             src:ravenna1,
             alt:'The ravenna, one of our best projects'
         },
-        // {
-        //     src:gray,
-        //     alt:'gray home'
-        // },
+        {
+            src:gray,
+            alt:'gray home'
+        },
         {
             src:indoor8,
             alt: 'Outdoor image 8'
@@ -144,7 +144,7 @@ const Homepage: React.FC = () => {
  links={navLinks}
  />
 <section className="absolute top-20 left-0 w-screen overflow-x-hidden
-bg-main-color ">
+bg-main-color text-black">
 
 <ImageHero
 images={imagesArray}/>

@@ -17,7 +17,7 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
 
     return (
         <nav className="fixed top-0 z-20 w-screen left-0 bg-main-color h-[100px]
-         flex justify-between items-center border-b-4 border-[#F0EAD6] text-gray-500
+         flex justify-between items-center border-b text-gray-500
           z-[210] text-white">
             <div className="relative flex justify-between 
              items-center  w-screen lg:w-[80vw] max-w-[1300px] lg:justify-between lg:items-stretch
@@ -32,21 +32,19 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
                     onClick={handleSubmenuClick}
                 >
                     <div className="   lg:hidden w-[140px] lg:w-auto flex flex-col justify-center items-center">
-                        <div className="h-[3px] bg-gray-500 w-[20px] mb-1" />
-                        <div className="h-[3px] bg-gray-500 w-[20px] mb-1" />
-                        <div className="h-[3px] bg-gray-500 w-[20px]" />
+                        <div className="h-[3px] bg-white w-[20px] mb-1" />
+                        <div className="h-[3px] bg-white w-[20px] mb-1" />
+                        <div className="h-[3px] bg-white w-[20px]" />
                     </div>
                     <ul
-                        className={`text-left bg-main-color fixed right-[5%] top-[70px] overflow-hidden
-                         transition-[height] flex flex-col items-center 
+                        className={`text-left bg-blue-800 fixed right-[5%] top-[70px] overflow-hidden
+                         transition-[height] flex flex-col items-center
                      
                           justify-center rounded-lg w-[140px]
                            lg:bg-transparent lg:w-auto lg:relative lg:overflow-auto 
                            lg:top-auto lg:right-auto lg:flex-row
                            text-center
-                            ${subMenuClicked ? `h-[175px] p-0 
-                            border-l-4
-                         border-b-4 border-r-4 border-[#EBE6DC]` : 'h-[0px] p-0 lg:h-auto'}`}
+                            ${subMenuClicked ? 'h-[175px] p-0' : 'h-[0px] p-0 lg:h-auto'}`}
                     >
                         {links.map((link, index) => (
                             <Link key={index} to={link.destination}>

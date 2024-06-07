@@ -78,7 +78,7 @@ items-center w-[200px] text-center md:text-left mb-auto">
 
      <li className='  mb-4'>
    <Link to={link.destination}
-   className='pb-4 text-gray-500 hover:text-red-200'
+   className='pb-4 text-gray- hover:text-red-200'
    key={index}>
      {link.name}
    </Link>

@@ -52,10 +52,10 @@ const Homepage: React.FC = () => {
             src:ravenna1,
             alt:'The ravenna, one of our best projects'
         },
-        // {
-        //     src:gray,
-        //     alt:'gray home'
-        // },
+        {
+            src:gray,
+            alt:'gray home'
+        },
         {
             src:indoor8,
             alt: 'Outdoor image 8'
@@ -144,7 +144,7 @@ const Homepage: React.FC = () => {
  links={navLinks}
  />
 <section className="absolute top-20 left-0 w-screen overflow-x-hidden
-bg-main-color ">
+bg-main-color text-black">
 
 <ImageHero
 images={imagesArray}/>

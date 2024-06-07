@@ -37,10 +37,10 @@ const ImageHero: React.FC<HeroProps> = ({ images }) => {
             mb-8 text-center">
 
           
-<h1 className="text-4xl mb-4 mt-4 sm:text-6xl bg-gradient-to-b from-gold-light to-gold-dark bg-clip-text text-transparent font-dancing-script">
+<h1 className="text-4xl mb-4 mt-4 sm:text-6xl bg-gradient-to-b from-gold-light to-gold-dark bg-clip-text text-transparent font-lobster-two">
         Dolce Vita Construction
       </h1>
-            <p className="mt-4 sm:text-xl pr-4 pl-4 mb-5 text-gray-500">Experience craftsmanship and personalized service as we bring your construction visions to life.</p>
+            <p className="mt-4 sm:text-xl pr-4 pl-4 mb-5">Experience craftsmanship and personalized service as we bring your construction visions to life.</p>
             {/* <p className="text-2xl mb-4 sm:text-3xl">Place address Here</p> */}
             <Link to='contact'  >
 
