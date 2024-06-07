@@ -32,14 +32,16 @@ const Carousel: React.FC<CarouselProps> = ({ images, hasDescription,
     const [carouselClicked, setCarouselClicked] = useState(false);
     const [isCoolDown, setIsCoolDown] = useState(false)
 
-    const [isDesktop, setIsDesktop ] = useState(window.innerWidth >= 865)
+    const [isMobile, setIsMobile ] = useState(window.innerWidth <= 655)
 
-    const [gridClicked, setGridClicked ] = useState(false)
+ function nullFunction(){
+
+ }
 
 
     useEffect(() => {
         const handleResize = () => {
-            setIsDesktop(window.innerWidth >= 865)
+            setIsMobile(window.innerWidth <= 655)
         }
         handleResize()
 
@@ -159,7 +161,7 @@ const Carousel: React.FC<CarouselProps> = ({ images, hasDescription,
                 mb-5 ${!carouselClicked ? 'max-w-[1300px] md:w-[95vw] relative' : 'bg-black h-screen fixed top-0 left-0 z-[95]'}`}>
 
 
-                 { !isGrid || !isDesktop || gridClicked ? (
+                 { !isGrid || isMobile || carouselClicked ? (
 
                 
 
@@ -167,8 +169,9 @@ const Carousel: React.FC<CarouselProps> = ({ images, hasDescription,
                  role="region"
                  aria-labelledby="carousel-heading">
 
-                    <div className={`flex relative justify-center items-center ml-auto mr-auto 
-                        ${!carouselClicked || gridClicked? `
+                    <div onClick={!isMobile && !carouselClicked ? handleCarouselClick : nullFunction}
+                    className={`flex relative justify-center items-center ml-auto mr-auto 
+                        ${!carouselClicked ? `
                         w-[90vw]
                         max-h-[804px]
                         h-[95vw]
@@ -183,7 +186,7 @@ const Carousel: React.FC<CarouselProps> = ({ images, hasDescription,
 
                         
                                 {/*this dictates the height and width of the image*/}
-                                <div    onClick={handleCarouselClick}
+                                <div   
                                 className={` z-[33]
                                     ml-auto mr-auto mb-auto absolute top-0
                                       
@@ -221,21 +224,12 @@ const Carousel: React.FC<CarouselProps> = ({ images, hasDescription,
                                          
                                             ml-auto mr-auto`} />
 
-                                            {!carouselClicked  && (
-
-                                            
-                                            <button
-                         aria-label={carouselClicked ? 'Collapse carousel' : 'Expand carousel'}
-
-className={` bg-gray-200 p-2 rounded-xl
-text-black `}
- onClick={handleCarouselClick}>
-   {carouselClicked ? 'Collapse' : 'Expand'}
-</button>
-)}
                                            
 
-{hasDescription && !carouselClicked && !isDesktop &&(
+
+                                           
+
+{hasDescription && !carouselClicked && isMobile &&(
                     <AnimatePresence mode='wait'>
                         <motion.div
                             key={currentImage}
@@ -277,7 +271,7 @@ text-black `}
                         w-[100%] absolute top-0 h-[100%]
                         max-h-[550px]
                                    
-                        max-w-[900px] ` : ' w-screen max-w-[1575px] h-screen relative'} 
+                        max-w-[900px] ` : ' w-screen max-w-[1575px] h-screen relative z-[1500]'} 
                         z-[45]
                         `}>
 
@@ -299,18 +293,23 @@ text-black `}
                 </div>
                 ) : (
                     <section className='grid grid-cols-2
-                    md:grid-cols-3'>
+    ml-auto mr-auto 
+                    md:grid-cols-3 gap-4  items-center justify-center'>
                         {images.map((image, index) => (
                             <img src={image.url}
                             alt={image.description}
                             key={index}
-                            className='w-[30vw] object-cover'/>
-
+                            onClick={handleCarouselClick}
+                            className='w-[45vw] md:w-[30vw] object-cover
+                            h-[45vw] md:h-[25vw] ml-auto mr-auto max-w-[380px]
+                            max-h-[270px]
+                            hover:scale-[1.1] transition-transform'/>
+  
                             
                         ))}
                         </section>
                 )}
-                {hasDescription && isDesktop && (
+                {hasDescription && !isMobile && (
                     <AnimatePresence mode='wait'>
                         <motion.div
                             key={currentImage}

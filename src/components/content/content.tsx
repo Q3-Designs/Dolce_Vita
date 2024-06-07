@@ -126,7 +126,7 @@ const nullVariant: Variants = {
         initial={hasAnimation ? 'initial' : ''}
         animate={hasAnimation && inView ? 'animate' : ''}
         className={`w-[90vw] h-[55vw] object-cover ml-auto mr-auto max-h-[567px] max-w-[668px] md:w-[50vw]
-        mt-auto mb-auto
+        mt-auto mb-auto rounded-2xl
         `}
         src={image}
       />
@@ -141,7 +141,8 @@ const nullVariant: Variants = {
           variants={headerVariants( !isMobile ? 0 : 0.25)}
           initial={hasAnimation ? 'initial' : ''}
           animate={hasAnimation && inView ? 'animate' : ''}
-           className="text-left pl-5 sm:pl-12 pt-5">{mainTitle}</motion.h1>
+           className="text-left pl-5 sm:pl-12 pt-5
+           bg-gradient-to-b from-gold-light to-gold-dark bg-clip-text text-transparent font-pangolin">{mainTitle}</motion.h1>
           <motion.p
           variants={textVariants(!isMobile ? 0.25 : 0.5)}
        initial={hasAnimation ? 'initial' : ''}

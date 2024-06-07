@@ -46,6 +46,8 @@ import grey1 from '../../media/greyHome/grey-home1.png'
 import Content from "../content/content";
 import Navbar from "../navbar/navbar";
 import Footer from "../footer/footer";
+import Carousel from "../carousel/carousel";
+import { Home } from "react-feather";
 
 const WhiteHome: React.FC = () => {
 
@@ -53,155 +55,174 @@ const WhiteHome: React.FC = () => {
         window.scrollTo(0,0)
     },[])
 
+    
+
      const backyardImages = [
         {
             url:ravenna8,
-            alt:'Ravenna 2'
+            title:'Ravenna 2',
+            description:'',
+            link:''
         },
         {
             url:ravenna9,
-            alt:'Ravenna 2'
+            title:'Ravenna 2',
+            description:'',
+            link:''
         },
         {
             url:ravenna10,
-            alt:'Ravenna 2'
+            title:'Ravenna 2',
+            description:'',
+            link:''
         },
         {
             url:ravenna11,
-            alt:'Ravenna 2'
+            title:'Ravenna 2',
+            description:'',
+            link:''
         },
         {
             url:ravenna12,
-            alt:'Ravenna 2'
+            title:'Ravenna 2',
+            description:'',
+            link:''
         },
         {
             url:ravenna13,
-            alt:'Ravenna 2'
+            title:'Ravenna 2',
+            description:'',
+            link:''
         },
         {
             url:ravenna14,
-            alt:'Ravenna 2'
+            title:'Ravenna 2',
+            description:'',
+            link:''
         },
-        // {
-        //     url:ravenna15,
-        //     alt:'Ravenna 2'
-        // },
+       
     ]
+
+   
 
     const greyImages = [
         {
-            url:grey2,
-            alt:'grey2'
+            url: grey2,
+            title: 'Grey 2',
+            description: '',
+            link: ''
         },
         {
-            url:grey3,
-            alt:'grey3'
+            url: grey3,
+            title: 'Grey 3',
+            description: '',
+            link: ''
         },
         {
-            url:grey4,
-            alt:'grey4'
+            url: grey4,
+            title: 'Grey 4',
+            description: '',
+            link: ''
         },
         {
-            url:grey5,
-            alt:'grey5'
+            url: grey5,
+            title: 'Grey 5',
+            description: '',
+            link: ''
         },
-        {
-            url:grey5,
-            alt:'grey6'
-        },
-        {
-            url:grey5,
-            alt:'grey7'
-        },
-    ]
     
-
+    ];
+    
     const images2 = [
         {
-            url:outdoor1,
-            alt:'Outdoor image 1'
+            url: outdoor1,
+            title: 'Outdoor image 1',
+            description: '',
+            link: ''
         },
         {
-            url:outdoor2,
-            alt:'Outdoor image 2'
+            url: outdoor2,
+            title: 'Outdoor image 2',
+            description: '',
+            link: ''
         },
         {
-            url:outdoor3,
-            alt:'Outdoor image 3'
+            url: outdoor3,
+            title: 'Outdoor image 3',
+            description: '',
+            link: ''
         },
         {
-            url:outdoor4,
-            alt:'Outdoor image 4'
+            url: outdoor4,
+            title: 'Outdoor image 4',
+            description: '',
+            link: ''
         },
         {
-            url:outdoor5,
-            alt:'Outdoor image 5'
+            url: outdoor5,
+            title: 'Outdoor image 5',
+            description: '',
+            link: ''
         },
         {
-            url:outdoor6,
-            alt:'Outdoor image 6'
+            url: outdoor6,
+            title: 'Outdoor image 6',
+            description: '',
+            link: ''
         },
-        ...backyardImages
-        
-    ]
-
+    ];
+    
     const images3 = [
-      {
-        url:indoor1,
-        alt:'Indoor image 1'
-      },
-      {
-        url:indoor2,
-        alt:'Indoor image 2'
-      },
-      {
-        url:indoor3,
-        alt:'Indoor image 3'
-      },
-      {
-        url:indoor4,
-        alt:'Indoor image 4'
-      },
-      {
-        url:indoor5,
-        alt:'Indoor image 5'
-      },
-      {
-        url:indoor6,
-        alt:'Indoor image 6'
-      },
-      {
-        url:indoor7,
-        alt:'Indoor image 7'
-      },
-      {
-        url:indoor8,
-        alt:'Indoor image 8'
-      },
-      ...greyImages
-
-
-
-    ]
-
-    // const images3 = [
-    //     {
-    //         url:bed1,
-    //         alt:'bed 1'
-    //     },
-    //     {
-    //         url:bed2,
-    //         alt:'bed 2'
-    //     },
-    //     {
-    //         url:bath1,
-    //         alt:'bath 1'
-    //     },
-    //     {
-    //         url:bath2,
-    //         alt:'bath 1'
-    //     }
-    // ]
+        {
+            url: indoor1,
+            title: 'Indoor image 1',
+            description: '',
+            link: ''
+        },
+        {
+            url: indoor2,
+            title: 'Indoor image 2',
+            description: '',
+            link: ''
+        },
+        {
+            url: indoor3,
+            title: 'Indoor image 3',
+            description: '',
+            link: ''
+        },
+        {
+            url: indoor4,
+            title: 'Indoor image 4',
+            description: '',
+            link: ''
+        },
+        {
+            url: indoor5,
+            title: 'Indoor image 5',
+            description: '',
+            link: ''
+        },
+        {
+            url: indoor6,
+            title: 'Indoor image 6',
+            description: '',
+            link: ''
+        },
+        {
+            url: indoor7,
+            title: 'Indoor image 7',
+            description: '',
+            link: ''
+        },
+        {
+            url: indoor8,
+            title: 'Indoor image 8',
+            description: '',
+            link: ''
+        },
+    ];
+    
 
     const workLinks = {
         title: 'Our Work',
@@ -279,7 +300,7 @@ const WhiteHome: React.FC = () => {
             {/* <h2>We make awesome custom homes </h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed unde sint alias porro ea natus error voluptatum, laudantium autem eius quod laboriosam eum totam rem? Consequatur cum nisi magni iste.</p> */}
 
-<div className="mb-[-25rem]">
+<div className="mb-[-5rem]">
             <TextParallaxContentExample
             image={main}
             heading='Our Homes'
@@ -292,21 +313,53 @@ const WhiteHome: React.FC = () => {
             hasDestination={false}/>
 </div>
 
-            {/* <HomeSection
-           {...whiteHouseText1}
-            images={[...images2, ...images3]}
+<HomeSection
+images={backyardImages}
+title='Our outdoor work'
+description="We have phenomenal outdoor work"
+/>
+
+          <HomeSection
+images={greyImages}
+title='Our Interior work'
+description="We have phenomenal outdoor work"
+/>  
+
+<HomeSection
+images={images2}
+title='Our Interior work'
+description="We have phenomenal outdoor work"
+/>  
 
 
-            /> */}
+<HomeSection
+images={images3}
+title='Our Interior work'
+description="We have phenomenal outdoor work"
+/>  
 
-            {/* <HomeSection
-           {...whiteHouseText2}
-            images={images3}
-            /> */}
-
-            {/* <HomeSection
-            {...whiteHouseText2}
+            {/* <Carousel
             images={backyardImages}
+            hasDescription={false}
+            isGrid={true}
+            />
+
+<Carousel
+            images={greyImages}
+            hasDescription={false}
+            isGrid={true}
+            />
+
+<Carousel
+            images={images2}
+            hasDescription={false}
+            isGrid={true}
+            />
+
+<Carousel
+            images={images3}
+            hasDescription={false}
+            isGrid={true}
             /> */}
 
             

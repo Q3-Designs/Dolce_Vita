@@ -18,14 +18,14 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
     return (
         <nav className="fixed top-0 z-20 w-screen left-0 bg-main-color h-[100px]
          flex justify-between items-center border-b-4 border-[#F0EAD6] text-gray-500
-          z-[210] text-white">
+          z-[100] text-white">
             <div className="relative flex justify-between 
              items-center  w-screen lg:w-[80vw] max-w-[1300px] lg:justify-between lg:items-stretch
-            z-[110]  ml-auto mr-auto">
+            z-[100]  ml-auto mr-auto">
                 <Link to='/'>
 
 
-                <p className="ml-2 lg:text-4xl mr-auto lg:mr-0 pl-6 lg:pl-0 bg-gradient-to-b from-gold-light to-gold-dark bg-clip-text text-transparent font-dancing-script
+                <p className="ml-2  text-3xl lg:text-4xl mr-auto lg:mr-0 pl-6 lg:pl-0 bg-gradient-to-b from-gold-light to-gold-dark bg-clip-text text-transparent font-dancing-script
                 ">Dolce Vita</p>
                 </Link>
                 <div
