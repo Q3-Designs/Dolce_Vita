@@ -1,0 +1,9 @@
+
+interface CarouselItemProps {
+    
+}
+
+
+const CarouselItem = () => {
+
+}

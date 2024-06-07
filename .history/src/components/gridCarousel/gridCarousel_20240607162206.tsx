@@ -1,0 +1,7 @@
+
+interface caro
+
+
+const CarouselItem = () => {
+
+}
