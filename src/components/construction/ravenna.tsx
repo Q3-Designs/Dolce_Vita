@@ -30,23 +30,33 @@ const Commercial: React.FC = () => {
     const commericalImages = [
         {
             url:commercial1,
-            alt:'Commercial building 1'
+            title:'Commercial building 1',
+            description:'',
+            link:''
         },
         {
             url:commercial2,
-            alt:'Commercial building 2'
+            title:'Commercial building 2',
+            description:'',
+            link:''
         },
         {
             url:commercial3,
-            alt:'Commercial building 3'
+            title:'Commercial building 3',
+            description:'',
+            link:''
         },
         {
             url:commercial4,
-            alt:'Commercial building 4'
+            title:'Commercial building 4',
+            description:'',
+            link:''
         },
         {
             url:commercial5,
-            alt:'Commercial building 5'
+            title:'Commercial building 5',
+            description:'',
+            link:''
         },
         // {
         //     url:commercial6,
@@ -70,25 +80,27 @@ const Commercial: React.FC = () => {
         ]
     };
     
-    const contactLinks = {
-        title: 'Site Map',
 
-        links: [
+
+        const links = [
             {
+                name:'Home',
                 destination:'/',
-                name:'Homepage'
+               
+            },
+            
+            {
+                destination: '/retail-homes',
+                name: 'Retail Homes'
+            },
+            {
+                destination: '/custom-homes',
+                name: 'Our Work'
             },
             {
                 destination: 'contact',
                 name: 'Contact us'
             },
-
-        ]
-    };
-
-        const links = [
-            workLinks,
-            contactLinks
         ]
 
         const navLinks = [

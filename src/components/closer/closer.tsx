@@ -43,6 +43,20 @@ destination,buttonText}) => {
         
       }
 
+      const textVariants = {
+        initial:{
+            y:-20,
+            opacity:0
+        },
+        animate:{
+            opacity:1,
+            y:0,
+            transition:{
+                delay:0.5
+            }
+        }
+      }
+
     return (
         <motion.section ref={componentRef}
          style={{
@@ -56,8 +70,14 @@ destination,buttonText}) => {
         initial='initial'
         animate={inView ? 'animate' : 'initial'}
         >
-            <div className="-mt-12">
-            <h1 className="pl-4   bg-gradient-to-b from-gold-light to-gold-dark bg-clip-text text-transparent font-caveat">{title}</h1>
+            <motion.div className="-mt-12"
+              variants={textVariants}
+              initial='initial'
+              animate={inView ? 'animate' : 'initial'}>
+            <motion.h1 
+           
+            className="pl-4   bg-gradient-to-b from-gold-light to-gold-dark bg-clip-text text-transparent font-caveat">{title}
+            </motion.h1>
           
             <p className="mt-4 text-left pl-4 pr-4
             max-w-[800px]">{description}</p>
@@ -70,7 +90,7 @@ destination,buttonText}) => {
                    {buttonText}
                 </button>
             </Link>
-            </div>
+            </motion.div>
         </motion.section>
     )
 }

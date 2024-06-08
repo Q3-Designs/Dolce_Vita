@@ -25,27 +25,39 @@ const GreyHome: React.FC = () => {
 const images = [
     {
         url:retail1,
-        alt: 'Retail Home 1'
+        title: 'Retail Home 1',
+        description:'',
+        link:''
     },
     {
         url:retail2,
-        alt: 'Retail Home 2'
+        title: 'Retail Home 2',
+        description:'',
+        link:''
     },
     {
         url:retail3,
-        alt: 'Retail Home 3'
+        title: 'Retail Home 3',
+        description:'',
+        link:''
     },
     {
         url:retail4,
-        alt: 'Retail Home 4'
+        title: 'Retail Home 4',
+        description:'',
+        link:''
     },
     {
         url:retail5,
-        alt: 'Retail Home 5'
+        title: 'Retail Home 5',
+        description:'',
+        link:''
     },
     {
         url:retail6,
-        alt: 'Retail Home 6'
+        title: 'Retail Home 6',
+        description:'',
+        link:''
     },
 ]
 
@@ -80,10 +92,26 @@ const images = [
         ]
     };
 
-        const links = [
-            workLinks,
-            contactLinks
-        ]
+    const links = [
+        {
+            name:'Home',
+            destination:'/',
+           
+        },
+        
+        {
+            destination: '/commercial-construction',
+            name: 'Commercial Construction'
+        },
+        {
+            destination: '/custom-homes',
+            name: 'Our Work'
+        },
+        {
+            destination: 'contact',
+            name: 'Contact us'
+        },
+    ]
 
         const navLinks = [
             {

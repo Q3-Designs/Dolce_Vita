@@ -9,8 +9,8 @@ interface CarouselProps {
         url:  string,
       
         title: string,
-        description: string,
-        link: string
+        description?: string,
+        link?: string
     }[],
     hasDescription?: boolean
     // width:number,
