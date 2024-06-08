@@ -27,7 +27,7 @@ import ravenna1 from '../../media/ravenna/ravenna1.webp'
 import indoor8 from '../../media/white/indoor8.webp'
 import outdoor5 from '../../media/white/outdoor5.webp'
 import indoor2 from '../../media/white/indoor2.webp'
-
+import outdoor8 from '../../media/white/outdoor1.png'
 
 // Imports for White Home images
 
@@ -177,7 +177,7 @@ images={imagesArray}/>
      />
 
      <Content
-     image={home2}
+     image={outdoor8}
     {...text2}
      customText={false}
      reverse={false}
