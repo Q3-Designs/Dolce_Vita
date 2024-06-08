@@ -37,7 +37,7 @@ import grey5 from '../../media/greyHome/grey-home5.png'
 // import bath2 from '../../media/greyHome/grey-bathroom2.png'
 
 import main from '../../media/white/white-main.png'
-import { whiteHouseText1,listText3 } from "../../data/data";
+import { listText3 } from "../../data/data";
 import HomeSection from "../homeSection/homeSection";
 import Accordion from "../accordion/accordion";
 import { TextParallaxContentExample } from "../parallaxText/parallaxText";
@@ -46,8 +46,7 @@ import grey1 from '../../media/greyHome/grey-home1.png'
 import Content from "../content/content";
 import Navbar from "../navbar/navbar";
 import Footer from "../footer/footer";
-import Carousel from "../carousel/carousel";
-import { Home } from "react-feather";
+
 
 const WhiteHome: React.FC = () => {
 
@@ -239,21 +238,7 @@ const WhiteHome: React.FC = () => {
         ]
     };
     
-    const contactLinks = {
-        title: 'Site Map',
-
-        links: [
-            {
-                destination:'/',
-                name:'Homepage'
-            },
-            {
-                destination: 'contact',
-                name: 'Contact us'
-            },
-
-        ]
-    };
+  
 
         const links = [
             {

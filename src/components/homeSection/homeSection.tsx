@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "../carousel/carousel";
-import ImageSlider from "../imageSlider/imageSlider";
+
 // import { ImageSlider2 } from "../imageSlider2/imageSlider2";
 
 interface HomeSectionProps {

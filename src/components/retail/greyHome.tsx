@@ -76,21 +76,7 @@ const images = [
         ]
     };
     
-    const contactLinks = {
-        title: 'Site Map',
-
-        links: [
-            {
-                destination:'/',
-                name:'Homepage'
-            },
-            {
-                destination: 'contact',
-                name: 'Contact us'
-            },
-
-        ]
-    };
+ 
 
     const links = [
         {

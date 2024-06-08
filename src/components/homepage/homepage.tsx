@@ -1,7 +1,7 @@
 import React, {useEffect, FormEvent} from "react"
 import Content from "../content/content"
 
-import home2 from '../../media/dv-home2.png'
+
 import { text1,closerText,openingText,
 text2,text3 } from "../../data/data"
 
