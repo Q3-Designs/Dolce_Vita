@@ -19,7 +19,8 @@ module.exports = {
           light: '#f9d976',
           DEFAULT: '#f8c251',
           dark: '#e8a546'
-        }
+        },
+        'gray-underline': '#b0b0b0'
       },
       backgroundImage: theme => ({
         'gold-gradient': 'linear-gradient(to bottom, #f9d976, #f8c251, #e8a546)',

@@ -14,6 +14,9 @@ h1{
   font-size: 2rem;
 }
 
+.text-shadow-gray {
+  text-shadow: 1px 1px 8px #e8a546; /* Customize the shadow as needed */
+}
 
 
 button{

@@ -178,10 +178,10 @@ const OverlayCopy = ({
         ref={targetRef}
         className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center text-white"
       >
-        <p className="mb-2 text-center text-xl md:mb-4 md:text-3xl">
+        <p className="mb-2 text-center text-3xl md:mb-4 md:text-3xl">
           {subheading}
         </p>
-        <p className="text-center text-4xl font-bold md:text-7xl bg-gradient-to-b from-gold-light to-gold-dark bg-clip-text text-transparent font-pacifico">{heading}</p>
+        <p className="text-center text-5xl sm:text-7xl font-bold md:text-8xl bg-gradient-to-b from-gold-light to-gold-dark bg-clip-text text-transparent font-caveat">{heading}</p>
       </motion.div>
     );
   };

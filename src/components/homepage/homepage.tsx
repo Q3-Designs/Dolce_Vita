@@ -84,19 +84,26 @@ const Homepage: React.FC = () => {
         ]
     };
     
-    const contactLinks = {
-        title: 'Contact',
-        links: [
-            {
-                destination: 'contact',
-                name: 'Email Us'
-            }
-        ]
-    };
+   
 
         const links = [
-            workLinks,
-            contactLinks
+            {
+                destination: 'custom-homes',
+                name: 'Portfolio'
+            },
+            {
+                destination: 'commercial-construction',
+                name: 'Commercial Construction'
+            },
+            {
+                name: 'Retail Homes',
+                destination: 'retail-homes',
+                
+            },
+            {
+                destination:'contact',
+                name:'Contact'
+               }
         ]
 
         const navLinks = [

@@ -53,7 +53,7 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
                             <Link key={index} to={link.destination}>
                                 <li className="text-md lg:text-lg mb-2
                                  pl-2 pr-2 lg:mb-0 text-gray-500
-                                 hover:text-black ">{link.name}</li>
+                                 hover:text-gold-dark ">{link.name}</li>
                             </Link>
                         ))}
                     </ul>

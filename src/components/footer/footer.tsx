@@ -4,19 +4,23 @@ import { motion, useMotionTemplate, useMotionValue,
     animate } from "framer-motion";
 
 
-interface Link {
-    destination: string;
-    name: string;
+interface links {
+    links:{
+        name:string,
+        destination:string,
+    }[]
+    
+    
 }
 
-interface FooterLink {
-    title: string;
-    links: Link[];
-}
+// interface FooterLink {
+//     title: string;
+//     links: Link[];
+// }
 
-interface FooterProps {
-    links: FooterLink[];
-}
+// interface FooterProps {
+//     links: FooterLink[];
+// }
 
 const colors = [
     "#0080ff", // Slightly darker shade of blue
@@ -26,7 +30,7 @@ const colors = [
   ];
 
 
-const Footer:React.FC<FooterProps> = ({links}) => {
+const Footer:React.FC<links> = ({links}) => {
 
     const color = useMotionValue(colors[0])
 
@@ -59,33 +63,34 @@ const Footer:React.FC<FooterProps> = ({links}) => {
 
   return (
     <>
-    <footer className='
-    w-[calc(100vw-5px)] border relative
-    text-gray-500
+    <footer className='w-[calc(100vw-5px)]
+      relative mt-[8rem] 
+  pb-12
+      ml-auto mr-auto
+      text-center
+      bg-radial-gradient from-blue-700 to-blue-900
     '>
-      <div className="flex justify-center
-      w-screen text-center items-center
-      ">
+      <div className="
+      pt-8
+      w-[screen] md:w-[50vw] max-w-[700px] ml-auto mr-auto flex flex-col 
+       ">
+        <h2 className='
+        text-2xl sm:text-5xl
+        mb-4   bg-gradient-to-b from-gold-light to-gold-dark bg-clip-text text-transparent font-caveat'>
+            Site Map
+        </h2>
       
-        {links.map((links,index) => (
+        {links.map((link,index) => (
 
-<div key={index}
-className="flex flex-col pt-5 justify-center 
-items-center w-[200px] text-center md:text-left mb-auto">
- <h2 className='font-medium text-2xl mb-4  mr-auto ml-auto md:ml-0'>{links.title}</h2>
- {links.links.map((link,index) => (
-     <ul className='mr-auto ml-auto md:ml-0'>
+<Link key={index}
+to={link.destination} >
 
-     <li className='  mb-4'>
-   <Link to={link.destination}
-   className='pb-4 text-gray-500 hover:text-red-200'
-   key={index}>
-     {link.name}
-   </Link>
-   </li>
-   </ul>
- ))}
- </div>
+
+
+            <p className='mt-2 text-gray-500 hover:text-orange-400 md:text-xl hover:text-gold
+            '>{link.name}</p>
+            </Link>
+
 
         ))}
        
@@ -96,24 +101,32 @@ items-center w-[200px] text-center md:text-left mb-auto">
        
       </div>
 
-      
-      <p className='mt-6 text-center'>Dolce Vita Construction and project management 2024</p>
+      <section className='flex flex-col
+       items-center justify-center
+     '>
+
+
+      <p className='mt-6
+      sm:text-2xl text-gray-500 '>Dolce Vita Construction and management 2024</p>
       <Link 
-            to='https://q3designs.netlify.app'>
+            to='https://q3designs.netlify.app'
+            >
                 <motion.p
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
                
                 style={{
                     boxShadow: hovered ? boxShadow : "none",
-                    backgroundColor: hovered ? 'rgb(0, 0, 30)' : "transparent",
+                    backgroundColor: hovered ? 'white' : "transparent",
                     color:backgroundColor,
                 }}
-                className='w-[200px] ml-auto mr-auto mb-5 mt-5'   >
+                className='w-[200px] ml-auto mr-auto mb-5 mt-5 p-3 rounded-xl
+                '   >
                 Created by Q3 Designs
                 </motion.p>
                
             </Link>
+            </section>
     </footer>
    
     </>

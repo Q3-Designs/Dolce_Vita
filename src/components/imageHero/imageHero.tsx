@@ -32,14 +32,15 @@ const ImageHero: React.FC<HeroProps> = ({ images }) => {
         mt-10 sm:mt-5
         md:flex-row 
         pb-10 h-screen md:h-auto">
-            <div className="md:w-[50vw] relative
+            <div className="md:w-[40vw] relative
             md:flex md:flex-col md:justify-start md:items-center
             mb-8 text-center mt-auto mb-auto">
-
+{/*  after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-5px] after:h-[2px] after:w-4/5 after:bg-gray-underline */}
           
-<h1 className="text-4xl mb-4 mt-4 sm:text-6xl bg-gradient-to-b from-gold-light to-gold-dark bg-clip-text text-transparent font-dancing-script">
-        Dolce Vita Construction
-      </h1>
+<h1 className="relative text-4xl mb-4 mt-4 sm:text-6xl bg-gradient-to-b from-gold-light to-gold-dark bg-clip-text text-transparent font-dancing-script text-shadow-gray">
+  Dolce Vita Construction
+</h1>
+
             <p className="mt-4 sm:text-xl pr-4 pl-4 mb-5 text-gray-500">Experience craftsmanship and personalized service as we bring your construction visions to life.</p>
             {/* <p className="text-2xl mb-4 sm:text-3xl">Place address Here</p> */}
             <Link to='contact'  >
@@ -55,7 +56,7 @@ const ImageHero: React.FC<HeroProps> = ({ images }) => {
             </div>
 
             <div className=" h-[70vh]  relative
-            md:w-[50vw]">
+            md:w-[60vw]">
                 {images.map((image, index) => (
                     <img
                         key={index}

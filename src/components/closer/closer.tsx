@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useRef, useState} from "react";
 import { Link } from "react-router-dom";
-
-
+import {motion} from 'framer-motion'
+import useIntersectionObserver from '../intersectionObserver/intersectionObserver'
 
 interface Props {
     image:string,
@@ -15,18 +15,49 @@ interface Props {
 const Closer: React.FC<Props> = ({image,title,description,
 destination,buttonText}) => {
 
+    const [inView, setInView] = useState(false)
+
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.6,
+      };
+    
+      // Use the custom hook to get a ref and observe intersection
+      const componentRef = useIntersectionObserver(setInView, options);
+
+      const variants = {
+        initial:{
+            opacity:0,
+            x:-100
+        },
+        animate:{
+            x:0,
+            opacity:1,
+            transition:{
+                opacity:{
+                    duration:0.5
+                }
+            }
+        }
+        
+      }
+
     return (
-        <section style={{
+        <motion.section ref={componentRef}
+         style={{
             backgroundImage:`url(${image})`
         }}
         className={`w-screen text-white h-[600px]
         relative flex flex-col items-center justify-center
         bg-center
         `}
-  
+        variants={variants}
+        initial='initial'
+        animate={inView ? 'animate' : 'initial'}
         >
             <div className="-mt-12">
-            <h1 className="pl-4">{title}</h1>
+            <h1 className="pl-4   bg-gradient-to-b from-gold-light to-gold-dark bg-clip-text text-transparent font-caveat">{title}</h1>
           
             <p className="mt-4 text-left pl-4 pr-4
             max-w-[800px]">{description}</p>
@@ -40,7 +71,7 @@ destination,buttonText}) => {
                 </button>
             </Link>
             </div>
-        </section>
+        </motion.section>
     )
 }
 

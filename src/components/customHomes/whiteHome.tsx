@@ -256,8 +256,22 @@ const WhiteHome: React.FC = () => {
     };
 
         const links = [
-            workLinks,
-            contactLinks
+            {
+                destination:'/',
+                name:'Homepage'
+            },
+            {
+                destination: 'contact',
+                name: 'Contact us'
+            },
+            {
+                destination: '/retail-homes',
+                name: 'Retail Homes'
+            },
+            {
+                destination: '/commercial-construction',
+                name: 'Commercial Construction'
+            }
         ]
 
         const navLinks = [
@@ -321,46 +335,24 @@ description="We have phenomenal outdoor work"
 
           <HomeSection
 images={greyImages}
-title='Our Interior work'
-description="We have phenomenal outdoor work"
+title='Our interior work'
+description="We have phenomenal interior work"
 />  
 
 <HomeSection
 images={images2}
-title='Our Interior work'
-description="We have phenomenal outdoor work"
+title='Your title here'
+description="Your description here"
 />  
 
 
 <HomeSection
 images={images3}
-title='Our Interior work'
-description="We have phenomenal outdoor work"
+title='Your title here'
+description="Your description here"
 />  
 
-            {/* <Carousel
-            images={backyardImages}
-            hasDescription={false}
-            isGrid={true}
-            />
-
-<Carousel
-            images={greyImages}
-            hasDescription={false}
-            isGrid={true}
-            />
-
-<Carousel
-            images={images2}
-            hasDescription={false}
-            isGrid={true}
-            />
-
-<Carousel
-            images={images3}
-            hasDescription={false}
-            isGrid={true}
-            /> */}
+         
 
             
             <article className="mt-[12rem]">

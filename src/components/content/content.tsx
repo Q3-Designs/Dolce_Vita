@@ -1,4 +1,4 @@
-import React, { useState, } from 'react';
+import React, { useEffect, useState, } from 'react';
 import { Variants, motion } from 'framer-motion';
 import useIntersectionObserver from '../intersectionObserver/intersectionObserver'
 import { useGeneralContext } from '../../context/context';
@@ -30,6 +30,21 @@ const Content: React.FC<contentProps> = ({
   const [inView, setInView] = useState(false);
 
  const {isMobile} = useGeneralContext()
+
+ const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 865)
+
+ useEffect(() => {
+  const handleResize = () => {
+    setIsDesktop(window.innerWidth >= 865)
+  }
+  handleResize()
+
+  window.addEventListener('resize',handleResize)
+
+  return () => {
+    window.removeEventListener('resize',handleResize)
+  }
+ },[])
 
   // Configure intersection observer options
   const options = {
@@ -138,13 +153,14 @@ const nullVariant: Variants = {
       ) : (
         <div className={`md:w-[40vw] ${!reverse ? 'md:mr-8' : ''}`} >
           <motion.h1
-          variants={headerVariants( !isMobile ? 0 : 0.25)}
+          variants={headerVariants( !isDesktop ? 0 : 0.25)}
           initial={hasAnimation ? 'initial' : ''}
           animate={hasAnimation && inView ? 'animate' : ''}
            className="text-left pl-5 sm:pl-12 pt-5
-           bg-gradient-to-b from-gold-light to-gold-dark bg-clip-text text-transparent font-pangolin">{mainTitle}</motion.h1>
+           bg-gradient-to-b from-gold-light to-gold-dark bg-clip-text text-transparent font-caveat
+           leading-tight">{mainTitle}</motion.h1>
           <motion.p
-          variants={textVariants(!isMobile ? 0.25 : 0.5)}
+          variants={textVariants(!isDesktop ? 0.25 : 0.5)}
        initial={hasAnimation ? 'initial' : ''}
        animate={inView && hasAnimation? 'animate' : ''}
           className="mt-6 pl-5 text-left sm:pl-12 whitespace-pre-line">
@@ -152,7 +168,7 @@ const nullVariant: Variants = {
               'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate rem distinctio veniam doloribus placeat volup tatibus dolores deleniti consequuntur harum asperiores?'}
                </motion.p>
             <motion.p
-             variants={textVariants(!isMobile ? 0.75 : 0.75)}
+             variants={textVariants(!isDesktop ? 0.75 : 0.75)}
              initial={hasAnimation ? 'initial' : ''}
              animate={inView && hasAnimation? 'animate' : ''}
              className="mt-6 text-left pl-5 sm:pl-12"
