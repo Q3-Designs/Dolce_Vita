@@ -315,26 +315,26 @@ const WhiteHome: React.FC = () => {
 <HomeSection
 images={backyardImages}
 title='Our outdoor work'
-description="We have phenomenal outdoor work"
+description="Discover our exceptional outdoor projects, featuring stunning landscapes, patios, and beautiful garden designs."
 />
 
           <HomeSection
 images={greyImages}
 title='Our interior work'
-description="We have phenomenal interior work"
+description="Explore our beautiful interior designs, showcasing modern, cozy spaces perfect for any home"
 />  
 
 <HomeSection
 images={images2}
-title='Your title here'
-description="Your description here"
+title=''
+description=""
 />  
 
 
 <HomeSection
 images={images3}
-title='Your title here'
-description="Your description here"
+title='Modern and welcoming'
+description="Explore our stunning collection of modern interiors, showcasing stylish, welcoming, and beautifully designed homes."
 />  
 
          

@@ -2,8 +2,8 @@ export const text1 = {
     mainTitle:'Our Portfolio',
     description:[
       
-"Dolce Vita Construction and Consulting takes pride in showcasing our diverse portfolio of successful projects. From sleek corporate headquarters to dynamic retail spaces, our portfolio represents our dedication to excellence and innovation. Each project tells a unique story of collaboration, creativity, and craftsmanship, highlighting our ability to bring visions to life.",
-"Explore our portfolio to discover the breadth and depth of our expertise in commercial construction. With a keen eye for detail and a passion for excellence, we have earned a reputation for delivering outstanding results that exceed our clients' expectations. Let our portfolio inspire your next project with Dolce Vita Construction and Consulting."
+"Dolce Vita Construction and Consulting showcases a diverse portfolio of successful projects. From corporate headquarters to retail spaces, our work represents dedication to excellence and innovation. Each project tells a story of collaboration, creativity, and craftsmanship.",
+"Explore our portfolio to see the depth of our commercial construction expertise. Our attention to detail and passion for excellence have built our reputation for delivering results. Let our portfolio inspire your next project with Dolce Vita Construction and Consulting."
     ],
     buttonLink:'custom-homes',
     buttonText:'View Here'
@@ -21,10 +21,10 @@ export const text2 = {
 
 export const text3 = {
     mainTitle:'Commercial Construction',
-    description:[
-        "Dolce Vita Construction and Consulting offers top-tier commercial construction services tailored to meet your exact needs. Our team excels in delivering exceptional results, from groundbreaking design concepts to flawless execution. With a focus on quality craftsmanship and attention to detail, we transform visions into reality, ensuring your project exceeds expectations",
-         'From modern office complexes to innovative retail spaces, we handle every aspect of commercial construction with precision and expertise. With a commitment to excellence and customer satisfaction, we strive to surpass industry standards, delivering projects on time and within budget. Trust Dolce Vita Construction and Consulting for your next commercial endeavor'
-     ],
+    description: [
+        "Dolce Vita Construction and Consulting offers commercial construction services tailored to your needs. Our team delivers exceptional results, from design to execution. With quality craftsmanship and attention to detail, we transform visions into reality, exceeding your expectations.",
+        "From office complexes to retail spaces, we handle all aspects of commercial construction with precision. Committed to excellence and customer satisfaction, we surpass industry standards, delivering projects on time and within budget. Trust Dolce Vita Construction and Consulting for your next commercial project."
+      ],
     buttonLink:'commercial-construction',
     buttonText:'View Here'
 }

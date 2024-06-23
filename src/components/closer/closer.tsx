@@ -80,7 +80,7 @@ destination,buttonText}) => {
             </motion.h1>
           
             <p className="mt-4 text-left pl-4 pr-4
-            max-w-[800px]">{description}</p>
+            max-w-[800px] sm:text-xl">{description}</p>
 
             <Link to={destination}>
                 <button className="mt-6 text-black
