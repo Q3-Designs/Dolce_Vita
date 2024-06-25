@@ -66,8 +66,8 @@ const Booking: React.FC = () => {
         <div className='text-center ml-auto mr-auto md:w-[50vw] max-w-[400px]'>
           {submitted ? ( // Conditional rendering based on the submitted state
             <div>
-              <h2 className='text-white text-2xl mt-5 pl-3 pr-3'>Form Submitted Successfully!</h2>
-              <p className='text-white'>Thank you for reaching out.</p>
+              <h2 className='text-black text-2xl mt-5 pl-3 pr-3'>Form Submitted Successfully!</h2>
+              <p className='text-black'>Thank you for reaching out, well get in touch with you soon</p>
             </div>
           ) : (
             <div>
