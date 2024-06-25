@@ -208,7 +208,8 @@ const Carousel: React.FC<CarouselProps> = ({ images, hasDescription,
                                 >
 
                                     <img
-                               
+                                loading='lazy'
+                                
                                     alt='lol'
                                         src={image.url}
                                         className={`
