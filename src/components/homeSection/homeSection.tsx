@@ -20,7 +20,7 @@ description,images}) => {
 
     return (
         <section className="mt-4 text-gray-500">
-            <h1 className="text-center font-caveat bg-gradient-to-b from-gold-light to-gold-dark bg-clip-text text-transparent">{title}</h1>
+            <h1 className="text-center  text-4xl  sm:text-5xl font-caveat bg-gradient-to-b from-gold-light to-gold-dark bg-clip-text text-transparent">{title}</h1>
             <p className="text-center  mt-5 mb-5 max-w-[800px] mr-auto ml-auto
             md:p-0">{description}</p>
             {/* <ImageSlider2

@@ -1,4 +1,4 @@
-import React, {useEffect, FormEvent} from "react"
+import React, {useEffect} from "react"
 import Content from "../content/content"
 
 
@@ -33,13 +33,18 @@ import outdoor8 from '../../media/white/outdoor1.png'
 
 import white3 from '../../media/white/indoor2.webp';
 
-import { useGeneralContext } from "../../context/context"
+// import { useGeneralContext } from "../../context/context"
 import ImageHero from "../imageHero/imageHero"
 import ScrollableCarousel from "../scrollableCarousel/scrollableCarousel"
+import triple from '../../media/triple-bay.jpeg'
 
 const Homepage: React.FC = () => {
 
     const scrollables = [
+        {
+            src:triple,
+            alt:'One of our newest listings, triple bay road'
+        },
         {
             src:indoor2,
             alt:'Indoor image 2'
@@ -114,20 +119,20 @@ const Homepage: React.FC = () => {
            }
         ]
 
-        const {password, setPassword, correctPassword, setCorrectPassword} = useGeneralContext()
+        // const {password, setPassword, correctPassword, setCorrectPassword} = useGeneralContext()
 
-        const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-            event.preventDefault();
-            if (password === 'clients2024') {
-                setCorrectPassword(true);
-            } else {
-              alert('Incorrect password. Please try again.');
-            }
-          };
+        // const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+        //     event.preventDefault();
+        //     if (password === 'clients2024') {
+        //         setCorrectPassword(true);
+        //     } else {
+        //       alert('Incorrect password. Please try again.');
+        //     }
+        //   };
         
-          const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-            setPassword(event.target.value);
-          };
+        //   const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        //     setPassword(event.target.value);
+        //   };
 
 
           const imagesArray = [
@@ -145,7 +150,7 @@ const Homepage: React.FC = () => {
     return (
         <>
 
-        {correctPassword === false ? (
+       
             <>
  <Navbar
  links={navLinks}
@@ -198,6 +203,9 @@ images={imagesArray}/>
         We get to work
      </h1> */}
 
+<iframe className="ml-auto mr-auto rounded-lg w-[90vw] h-[50vw] max-w-[950px] max-h-[650px] "
+ src="https://www.youtube.com/embed/gzKfRibY-6Y?si=uoTjYfaaLvHlLM0N" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+
      <ScrollableCarousel
      images={scrollables}
      />
@@ -222,7 +230,7 @@ images={imagesArray}/>
      images={images}/> */}
      </section>
      </>
-      ) : (
+      {/* ) : (
             <>
             <section className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-100 p-8 rounded-md shadow-md
             bg-main-color`
@@ -239,7 +247,7 @@ images={imagesArray}/>
                 </form>
               </section>
           </>
-        )} 
+        )}  */}
 
           
             </>

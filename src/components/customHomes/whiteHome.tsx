@@ -21,16 +21,16 @@ import indoor8 from '../../media/white/indoor8.png'
 import ravenna8 from '../../media/ravenna/ravenna8.png'
 import ravenna9 from '../../media/ravenna/ravenna9.png'
 import ravenna10 from '../../media/ravenna/ravenna10.png'
-import ravenna11 from '../../media/ravenna/ravenna11.png'
+import ravenna11 from '../../media/ravenna/ravenna11.webp'
 import ravenna12 from '../../media/ravenna/ravenna12.png'
 import ravenna13 from '../../media/ravenna/ravenna13.png'
 import ravenna14 from '../../media/ravenna/ravenna14.png'
 
 
-import grey2 from '../../media/greyHome/grey-home2.png'
-import grey3 from '../../media/greyHome/grey-home3.png'
-import grey4 from '../../media/greyHome/grey-home4.png'
-import grey5 from '../../media/greyHome/grey-home5.png'
+import grey2 from '../../media/greyHome/grey-home2.webp'
+import grey3 from '../../media/greyHome/grey-home3.webp'
+import grey4 from '../../media/greyHome/grey-home4.webp'
+import grey5 from '../../media/greyHome/grey-home5.webp'
 // import bed1 from '../../media/greyHome/grey-bed1.png'
 // import bed2 from '../../media/greyHome/grey-bed2.png'
 // import bath1 from '../../media/greyHome/grey-bathroom1.png'
@@ -41,11 +41,12 @@ import { listText3 } from "../../data/data";
 import HomeSection from "../homeSection/homeSection";
 import Accordion from "../accordion/accordion";
 import { TextParallaxContentExample } from "../parallaxText/parallaxText";
-import grey1 from '../../media/greyHome/grey-home1.png'
+
 // import TextFormat from "../textFormat/textFormat";
 import Content from "../content/content";
 import Navbar from "../navbar/navbar";
 import Footer from "../footer/footer";
+import triple from '../../media/triple-bay.jpeg'
 
 
 const WhiteHome: React.FC = () => {
@@ -345,7 +346,7 @@ description="Explore our stunning collection of modern interiors, showcasing sty
        
            <Content
            hasAnimation={true}
-           image={grey1}
+           image={triple}
            customText={ <Accordion
             text={listText3}
             hasIntro={true}

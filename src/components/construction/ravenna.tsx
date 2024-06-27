@@ -168,7 +168,7 @@ const Commercial: React.FC = () => {
 
 
                       <Content
-           hasAnimation={true}
+           hasAnimation={false}
            image={commercial7}
            customText={ <Accordion
             text={listText1}

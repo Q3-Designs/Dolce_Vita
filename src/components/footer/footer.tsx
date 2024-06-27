@@ -75,7 +75,7 @@ const Footer:React.FC<links> = ({links}) => {
       w-[screen] md:w-[50vw] max-w-[700px] ml-auto mr-auto flex flex-col 
        ">
         <h2 className='
-        text-2xl sm:text-5xl
+        text-4xl sm:text-5xl
         mb-4   bg-gradient-to-b from-gold-light to-gold-dark bg-clip-text text-transparent font-caveat'>
             Site Map
         </h2>

@@ -14,14 +14,33 @@ interface ParallaxTextProps {
   hasDestination: boolean;
 }
 
+
+
 export const TextParallaxContentExample: React.FC<ParallaxTextProps> = memo(
   ({ image, subheading, heading, destination, title, description, hasDestination }) => {
+
+    const {isMobile} = useGeneralContext()
     return (
-      <div className="relative w-screen">
+     <>
+        {!isMobile ? (
+
+          <div className="relative w-screen">
         <TextParallaxContent imgUrl={image} subheading={subheading} heading={heading}>
           <TextExample1 destination={destination} title={title} description={description} hasDestination={hasDestination} />
         </TextParallaxContent>
-      </div>
+        </div>
+        ) : (
+          <>
+         <div className="mb-[6.5rem] mt-[8rem] flex flex-col items-center justify-center h-[60vw]">
+         <h1 className=" relative ml-auto mr-auto text-4xl font-bold md:text-8xl bg-gradient-to-b from-gold-light to-gold-dark bg-clip-text text-transparent font-caveat">{heading}</h1>
+         
+          <img src={image}
+          className=' relative w-[90vw] object-cover ml-auto mr-auto mb-4 h-[60vw]'/>
+           
+           </div>
+          </>
+        ) }
+ </>
     );
   }
 );
