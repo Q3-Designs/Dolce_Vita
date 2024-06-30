@@ -32,6 +32,7 @@ import outdoor8 from '../../media/white/outdoor1.png'
 // Imports for White Home images
 
 import white3 from '../../media/white/indoor2.webp';
+import video from '../../media/video.mp4'
 
 // import { useGeneralContext } from "../../context/context"
 import ImageHero from "../imageHero/imageHero"
@@ -203,8 +204,15 @@ images={imagesArray}/>
         We get to work
      </h1> */}
 
-<iframe className="ml-auto mr-auto rounded-lg w-[90vw] h-[50vw] max-w-[950px] max-h-[650px] "
+<iframe className="ml-auto mr-auto rounded-lg w-[90vw] h-[50vw] max-w-[950px] max-h-[650px] mb-[4rem] "
  src="https://www.youtube.com/embed/gzKfRibY-6Y?si=uoTjYfaaLvHlLM0N" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+
+<iframe className="ml-auto mr-auto rounded-lg w-[90vw] h-[50vw] max-w-[950px] max-h-[650px] mb-[4rem]" src="https://www.youtube.com/embed/5eK7zecheEM?si=5jh1cUOCJ9P92cr6&amp;start=5" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+
+ {/* <video controls
+ className="ml-auto mr-auto rounded-lg w-[90vw] h-[50vw] max-w-[950px] max-h-[650px]">
+    <source src={video} type='video/mp4'/>
+ </video> */}
 
      <ScrollableCarousel
      images={scrollables}

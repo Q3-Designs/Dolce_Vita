@@ -15,12 +15,13 @@ interface CarouselProps {
     hasDescription?: boolean
     // width:number,
     // height:number
-    isGrid?:boolean
+    isGrid?:boolean,
+    isVideo?:boolean
  
 }
 
 const Carousel: React.FC<CarouselProps> = ({ images, hasDescription,
-    isGrid }) => {
+    isGrid, isVideo }) => {
 
     const [shift, setShift] = useState<number>(0);
     const [currentImage, setCurrentImage] = useState<number>(0);
@@ -207,6 +208,25 @@ const Carousel: React.FC<CarouselProps> = ({ images, hasDescription,
                                
                                 >
 
+                                    {!isVideo ? (
+                                        <video  className={`
+                                        ${!carouselClicked  ? ` w-[100%] 
+                                        max-w-[805px]
+                                        max-h-[624px]
+                                        h-[100%]`
+                                        : `w-[100vw] 
+                                       
+                                        max-w-[1400px] ml-auto mr-auto max-h-[900px]
+                                       `}
+                                        object-cover object-right z-[25]
+                                     
+                                        ml-auto mr-auto`}>
+                                            <source src={image.url} type="video/mp4"/>
+
+                                        </video>
+                                    ) : (
+
+                                    
                                     <img
                                 
                                 
@@ -224,6 +244,7 @@ const Carousel: React.FC<CarouselProps> = ({ images, hasDescription,
                                             object-cover object-right z-[25]
                                          
                                             ml-auto mr-auto`} />
+                                            )}
 
                                            
 
