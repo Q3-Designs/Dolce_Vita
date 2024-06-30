@@ -209,10 +209,10 @@ images={imagesArray}/>
 
 <iframe className="ml-auto mr-auto rounded-lg w-[90vw] h-[50vw] max-w-[950px] max-h-[650px] mb-[4rem]" src="https://www.youtube.com/embed/5eK7zecheEM?si=5jh1cUOCJ9P92cr6&amp;start=5" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 
- {/* <video controls
+ <video controls
  className="ml-auto mr-auto rounded-lg w-[90vw] h-[50vw] max-w-[950px] max-h-[650px]">
     <source src={video} type='video/mp4'/>
- </video> */}
+ </video>
 
      <ScrollableCarousel
      images={scrollables}
