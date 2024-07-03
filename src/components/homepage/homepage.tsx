@@ -203,16 +203,43 @@ images={imagesArray}/>
      {/* <h1 className="text-center">
         We get to work
      </h1> */}
+     <section className="flex flex-col justify-center items-center">
+     <h1 className="
+
+bg-gradient-to-b from-gold-light to-gold-dark bg-clip-text text-transparent font-caveat
+leading-tight ml-auto mr-auto mb-5 md:text-6xl">
+ Contemporary
+</h1>
+
 
 <iframe className="ml-auto mr-auto rounded-lg w-[90vw] h-[50vw] max-w-[950px] max-h-[650px] mb-[4rem] "
  src="https://www.youtube.com/embed/gzKfRibY-6Y?si=uoTjYfaaLvHlLM0N" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+     </section>
+<section className="flex flex-col justify-center items-center" >
+ <h1 className="
+
+           bg-gradient-to-b from-gold-light to-gold-dark bg-clip-text text-transparent font-caveat
+           leading-tight ml-auto mr-auto mb-5 md:text-6xl">
+            Elegance
+ </h1>
+
 
 <iframe className="ml-auto mr-auto rounded-lg w-[90vw] h-[50vw] max-w-[950px] max-h-[650px] mb-[4rem]" src="https://www.youtube.com/embed/5eK7zecheEM?si=5jh1cUOCJ9P92cr6&amp;start=5" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+</section>
+
+<section className="flex flex-col justify-center items-center" >
+<h1 className="
+md:text-6xl
+           bg-gradient-to-b from-gold-light to-gold-dark bg-clip-text text-transparent font-caveat
+           leading-tight ml-auto mr-auto mb-5">
+            Traditional fusion
+ </h1>
 
  <video controls
  className="ml-auto mr-auto rounded-lg w-[90vw] h-[50vw] max-w-[950px] max-h-[650px]">
     <source src={video} type='video/mp4'/>
  </video>
+ </section>
 
      <ScrollableCarousel
      images={scrollables}

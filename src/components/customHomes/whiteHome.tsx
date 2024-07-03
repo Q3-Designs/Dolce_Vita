@@ -32,7 +32,7 @@ import grey3 from '../../media/greyHome/grey-home3.webp'
 import grey4 from '../../media/greyHome/grey-home4.webp'
 import grey5 from '../../media/greyHome/grey-home5.webp'
 // import bed1 from '../../media/greyHome/grey-bed1.png'
-// import bed2 from '../../media/greyHome/grey-bed2.png'
+import bed2 from '../../media/greyHome/grey-bed2.png'
 // import bath1 from '../../media/greyHome/grey-bathroom1.png'
 // import bath2 from '../../media/greyHome/grey-bathroom2.png'
 
@@ -46,7 +46,7 @@ import { TextParallaxContentExample } from "../parallaxText/parallaxText";
 import Content from "../content/content";
 import Navbar from "../navbar/navbar";
 import Footer from "../footer/footer";
-import triple from '../../media/triple-bay.jpeg'
+// import triple from '../../media/triple-bay.jpeg'
 
 
 const WhiteHome: React.FC = () => {
@@ -346,7 +346,7 @@ description="Explore our stunning collection of modern interiors, showcasing sty
        
            <Content
            hasAnimation={true}
-           image={triple}
+           image={bed2}
            customText={ <Accordion
             text={listText3}
             hasIntro={true}
