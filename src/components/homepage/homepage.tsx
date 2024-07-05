@@ -37,15 +37,24 @@ import video from '../../media/video.mp4'
 // import { useGeneralContext } from "../../context/context"
 import ImageHero from "../imageHero/imageHero"
 import ScrollableCarousel from "../scrollableCarousel/scrollableCarousel"
-import triple from '../../media/triple-bay.jpeg'
-
+// import triple from '../../media/triple-bay.jpeg'
+import kdot from '../../media/white/outdoor1.png'
+import sketch from '../../media/house-sketch.png'
 const Homepage: React.FC = () => {
 
     const scrollables = [
         {
-            src:triple,
-            alt:'One of our newest listings, triple bay road'
+            src:kdot,
+            alt:'A wonderful outdoor picture of a big white home'
         },
+        {
+            src:sketch,
+            alt:'A sketch of the previous white home'
+        },
+        // {
+        //     src:triple,
+        //     alt:'One of our newest listings, triple bay road'
+        // },
         {
             src:indoor2,
             alt:'Indoor image 2'
