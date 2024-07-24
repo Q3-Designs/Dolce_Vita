@@ -62,7 +62,7 @@ const ImageHero: React.FC<HeroProps> = ({ images }) => {
                         key={index}
                         src={image.src}
                         alt={image.alt}
-                        className={`w-full h-full top-0 object-cover
+                        className={`w-full h-[80%] md:h-full top-0 object-cover
                          absolute  object-center opacity-0  transition-opacity 
                           duration-1000 ${index === currentImageIndex ? 'opacity-100' : ''}`}
                     />
