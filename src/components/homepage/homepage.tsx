@@ -148,9 +148,9 @@ const Homepage: React.FC = () => {
 
 
           const imagesArray = [
-            { src: ravenna3, alt: 'Ravenna 3' },
-            { src: ravenna4, alt: 'Ravenna 4' },
-            { src: ravenna5, alt: 'Ravenna 5' },
+            { src: sketch, alt: 'Ravenna 3' },
+            { src: kdot, alt: 'Ravenna 4' },
+            { src: ravenna1, alt: 'Ravenna 5' },
             { src: white3, alt: 'White Home 3' },
             { src: grey3, alt: 'Gray home 3'}
            
