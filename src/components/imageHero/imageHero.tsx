@@ -29,7 +29,7 @@ const ImageHero: React.FC<HeroProps> = ({ images }) => {
 
     return (
         <header className="flex w-screen flex flex-col relative
-        mt-10 sm:mt-5
+        mt-8 sm:mt-5
         md:flex-row 
         pb-10 h-screen md:h-auto">
             <div className="md:w-[40vw] relative
