@@ -16,9 +16,7 @@ import indoor3 from '../../media/white/indoor3.webp'
 import commercial from '../../media/commercial/commercialMain.webp'
 
 
-import ravenna3 from '../../media/ravenna/ravenna22.webp';
-import ravenna4 from '../../media/ravenna/ravenna17.webp';
-import ravenna5 from '../../media/ravenna/ravenna11.webp';
+
 
 import grey3 from '../../media/greyHome/grey-home3.webp';
 
