@@ -43,13 +43,18 @@ import sketch from '../../media/house-sketch.png'
 const Homepage: React.FC = () => {
 
     const scrollables = [
+     
+        {
+            src:sketch,
+            alt:'A sketch of the previous white home'
+        },
         {
             src:kdot,
             alt:'A wonderful outdoor picture of a big white home'
         },
         {
-            src:sketch,
-            alt:'A sketch of the previous white home'
+            src:ravenna1,
+            alt:'The ravenna, one of our best projects'
         },
         // {
         //     src:triple,
@@ -63,10 +68,7 @@ const Homepage: React.FC = () => {
             src:outdoor5,
             alt:'Outdoor image 5'
         },
-        {
-            src:ravenna1,
-            alt:'The ravenna, one of our best projects'
-        },
+       
         // {
         //     src:gray,
         //     alt:'gray home'
