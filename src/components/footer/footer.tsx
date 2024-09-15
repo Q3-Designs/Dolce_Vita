@@ -122,7 +122,7 @@ to={link.destination} >
                 }}
                 className='w-[200px] ml-auto mr-auto mb-5 mt-5 p-3 rounded-xl
                 '   >
-                Created by Q3 Designs
+                Created by Focusflow Software
                 </motion.p>
                
             </Link>

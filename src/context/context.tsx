@@ -40,6 +40,8 @@ export const ContextProvider: React.FC<{ children: ReactNode }> = ({ children })
 
   const [clickedImage, setClickedImage] = useState<number | null>(null)
 
+  
+
   useEffect(() => {
     const handleScroll = () => {
       setIsMobile(window.innerWidth <= 655);
