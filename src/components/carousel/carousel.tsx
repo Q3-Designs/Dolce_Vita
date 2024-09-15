@@ -28,18 +28,32 @@ isGrid }) => {
   const [isCoolDown, setIsCoolDown] = useState(false);
 
   const {isMobile} = useGeneralContext()
-
+    const [gridClicked, setGridClicked] = useState(false)
 
   const coolDownTime = 1000;
 
-  function handleCarouselClick() {
-    console.log('carousel clicked!')
-    setCarouselClicked(!carouselClicked);
+  function handleCarouselClick(index: number | null) {
+    if (index !== null) {
+        setGridClicked(true)
+      setCarouselClicked(true);
+      setCurrentImage(index);  // Set the current image to the clicked image's index
+      setShift(-index);        // Calculate the shift based on the clicked image's index
+    } else {
+      // Handle the case where index is null (when exiting the carousel)
+      setCarouselClicked(false);
+    }
   }
+
+  useEffect(()=>{
+    if(leftClicked || rightClicked){
+        setGridClicked(false)
+    }
+  },[leftClicked, rightClicked])
+  
 
   function handlePrevClick() {
     if (isCoolDown) return;
-
+    setGridClicked(false)
     setLeftClicked(true);
     setRightClicked(false);
 
@@ -56,7 +70,7 @@ isGrid }) => {
 
   function handleNextClick() {
     if (isCoolDown) return;
-
+    setGridClicked(false)
     setRightClicked(true);
     setLeftClicked(false);
     if (shift === -images.length + 1) {
@@ -72,6 +86,7 @@ isGrid }) => {
   }
 
   useEffect(() => {
+ 
     if (shift === 0 && rightClicked) {
       console.warn('carousel wrapping!');
     }
@@ -106,6 +121,9 @@ isGrid }) => {
   }, [leftEdgeCase, shift, currentImage, leftClicked, rightClicked, images.length]);
 
   const shouldApplyTransition = (index: number) => {
+    if(gridClicked){
+        return false
+    }
     return !(
       (index === 0 && rightEdgeShift === 100 && !leftClicked) ||
       (index === images.length - 1 && leftEdgeShift === -100 && !rightClicked) ||
@@ -157,7 +175,7 @@ isGrid }) => {
             {images.map((image, index) => (
               <div
                 key={index}
-                onClick={handleCarouselClick}
+                onClick={()=>handleCarouselClick(null)}
                 className={` z-[29]
                 ml-auto mr-auto mb-auto absolute top-0
                 ${!carouselClicked ? `
@@ -243,7 +261,7 @@ isGrid }) => {
         {carouselClicked && (
           <button
             className='fixed bottom-[2%] left-[50%] -translate-x-[50%] z-[100] bg-gray-200 p-2 rounded-xl text-black'
-            onClick={handleCarouselClick}
+            onClick={()=>handleCarouselClick(null)}
           >
             Collapse
           </button>
@@ -256,9 +274,10 @@ isGrid }) => {
             {images.map((image, index) => (
                 <img src={image.url}
                 key={index}
-                className='w-[40vw] md:w-[28vw] object-contain
+                className='w-[40vw] md:w-[31vw] object-contain
                 mx-auto max-w-[480px] max-h-[320px]
-                mb-8'
+                mb-8 hover:scale-[1.1] transition-transform'
+                onClick={()=>handleCarouselClick(index)}
                 />
             ))}
         </section>
