@@ -29,7 +29,8 @@ description,images}) => {
            <Carousel
            images={images}
            hasDescription={false}
-           isGrid={true}/>
+           isGrid={true}
+           />
             
 
         </section>

@@ -11,12 +11,12 @@ interface CarouselProps {
     link?: string;
   }[];
   hasDescription?: boolean;
-  id:string,
+
   isGrid?:boolean
 }
 
-const Carousel: React.FC<CarouselProps> = ({ images, hasDescription,id,
-isGrid }) => {
+const Carousel: React.FC<CarouselProps> = ({ images, hasDescription,
+ }) => {
   const [shift, setShift] = useState<number>(0);
   const [currentImage, setCurrentImage] = useState<number>(0);
   const [leftClicked, setLeftClicked] = useState<boolean>(false);
@@ -147,7 +147,7 @@ isGrid }) => {
 
     
       <section
-      id={id}
+     
         aria-label="Image carousel"
         className={`w-screen  
           flex flex-col   ml-auto mr-auto
