@@ -32,9 +32,9 @@ const Booking: React.FC = () => {
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const serviceId = 'service_32u1f5x';
-    const templateId = 'template_ubgz5ef';
-    const userId = 'CN_-9JmkFRgjxgmrg';
+    const serviceId = 'service_qn80zpt';
+    const templateId = 'template_usi7lbf';
+    const userId = 'wnzYhG8ymhrUuHQGA'
 
     if (form.current) {
       emailjs
