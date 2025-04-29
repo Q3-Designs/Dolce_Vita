@@ -33,7 +33,7 @@ const Booking: React.FC = () => {
     e.preventDefault();
 
     const serviceId = 'service_qn80zpt';
-    const templateId = 'template_usi7lbf';
+    const templateId = 'template_ou4aapm';
     const userId = 'wnzYhG8ymhrUuHQGA'
 
     if (form.current) {
